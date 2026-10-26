@@ -1,0 +1,491 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-container": "#1c1b1b", "on-tertiary": "#ffffff", "surface-bright": "#fff8f3", "on-surface-variant": "#444748", "on-tertiary-fixed-variant": "#4c4641", "secondary-fixed": "#fcdeb4", "primary-fixed": "#e5e2e1", "on-error": "#ffffff", "tertiary-fixed-dim": "#cfc5be", "on-primary-fixed": "#1c1b1b", "tertiary": "#000000", "error-container": "#ffdad6", "primary-fixed-dim": "#c8c6c5", "background": "#fff8f3", "secondary-container": "#f9dbb1", "surface": "#fff8f3", "on-secondary-fixed-variant": "#574424", "outline-variant": "#c4c7c7", "on-surface": "#1f1b17", "on-tertiary-fixed": "#1f1b17", "surface-variant": "#eae1da", "on-tertiary-container": "#8a827d", "on-background": "#1f1b17", "secondary-fixed-dim": "#dfc29a", "surface-tint": "#5f5e5e", "error": "#ba1a1a", "tertiary-container": "#1f1b17", "inverse-surface": "#34302b", "secondary": "#705b3a", "inverse-primary": "#c8c6c5", "inverse-on-surface": "#f8efe8", "on-primary": "#ffffff", "on-secondary-fixed": "#271901", "on-primary-fixed-variant": "#474746", "primary": "#000000", "on-secondary-container": "#755f3e", "on-error-container": "#93000a", "outline": "#747878", "on-primary-container": "#858383", "surface-container-lowest": "#ffffff", "surface-dim": "#e1d9d1", "surface-container-high": "#efe7df", "surface-container-low": "#fbf2ea", "tertiary-fixed": "#ebe0da", "on-secondary": "#ffffff", "surface-container": "#f5ece5", "surface-container-highest": "#eae1da" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "margin-desktop": "5rem", "space-md": "1rem", "space-xs": "0.25rem", "margin-tablet": "3rem", "space-xl": "3rem", "space-2xl": "5rem", "gutter-desktop": "2.5rem", "gutter": "1.5rem", "space-lg": "1.75rem", "margin": "1.5rem" }, "fontFamily": { "headline-md": ["Playfair Display"], "display-lg-mobile": ["Playfair Display"], "display-xl-mobile": ["Playfair Display"], "caption": ["Manrope"], "title-md": ["Manrope"], "body-md": ["Manrope"], "headline-lg": ["Playfair Display"], "headline-sm": ["Playfair Display"], "display-lg": ["Playfair Display"], "label-caps": ["Manrope"], "body-sm": ["Manrope"], "display-xl": ["Playfair Display"], "body-lg": ["Manrope"], "headline-lg-mobile": ["Playfair Display"] }, "fontSize": { "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "400" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "display-xl-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "caption": ["12px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "300" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "500" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], "display-xl": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "300" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-margin lg:px-margin-desktop flex items-center justify-between"><a href="index.html" class="flex items-center gap-space-md"><span class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-wider font-normal">ZENZA</span><span class="hidden sm:inline-block font-label-caps text-label-caps uppercase text-secondary tracking-widest pl-space-xs">HAIR STUDIO</span></a><nav class="hidden lg:flex items-center gap-gutter-desktop" data-active-classes="text-on-surface font-semibold"><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="home" href="index.html">Home</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="services" href="services.html">Services</a><a aria-current="page" class="uppercase transition-colors tracking-widest text-on-surface font-semibold" data-path="gallery" href="gallery.html">Gallery</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="about-us" href="about.html">About Us</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="stylists" href="about.html#stylists">Stylists</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="contact" href="contact.html">Contact</a></nav><div class="flex items-center gap-space-md"><a class="bg-secondary text-on-secondary px-space-md py-space-sm font-label-caps text-label-caps uppercase tracking-widest hover:bg-on-surface transition-colors shadow-sm" data-path="booking" href="booking.html">Book Appointment</a><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1Ws-VfcQHvzwgnASt0BceRTtq33K09FtBFabXV8mPKO3lZ_vfHH0_Wu0uaWoeAAn0osTY6ALwXb-RWWXdeuFnAxL7l3UVxjg7r9JnkZqGtMHp6rMmC1Usiii9pi93hKolPwcOonwmfBLX-al0b4OOwSBgAVevT-Wfs6rF51jMsS1-jIx2ctbkbku70-VPUqqmuGA8kwdiqv_G-GJbF_XMhpg4dCTjyEBzwY8KwH_3KbU98jNoKSQnsRcYCK"></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<!-- Top Editorial Header & Curation Narrative -->
+<section class="w-full max-w-[1440px] mx-auto px-margin lg:px-margin-desktop pt-space-xl lg:pt-space-2xl pb-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="space-y-space-xs max-w-2xl">
+<div class="flex items-center gap-space-sm text-secondary">
+<span class="font-label-caps text-label-caps uppercase tracking-widest">Archive No. 04</span>
+<span class="w-8 h-[1px] bg-secondary opacity-40"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest">Seasonal Collection</span>
+</div>
+<h1 class="font-display-xl text-display-xl tracking-tight text-on-surface uppercase">The Portfolio</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant font-light leading-relaxed pt-space-xs">
+          A curated curation of transformative looks, master coloring, and textural artistry created within our studios.
+        </p>
+</div>
+<!-- Live Metric Badges -->
+<div class="flex items-center gap-space-lg bg-surface-container px-space-lg py-space-md self-start lg:self-auto shadow-sm">
+<div class="text-left">
+<p class="font-headline-sm text-headline-sm text-on-surface font-normal">840+</p>
+<p class="font-label-caps text-label-caps uppercase text-on-surface-variant">Archived Looks</p>
+</div>
+<div class="w-[1px] h-8 bg-outline-variant/30"></div>
+<div class="text-left">
+<p class="font-headline-sm text-headline-sm text-secondary font-normal">100%</p>
+<p class="font-label-caps text-label-caps uppercase text-on-surface-variant">Bespoke Formulations</p>
+</div>
+</div>
+</div>
+<!-- Category Pill Filters -->
+<div class="pt-space-xl flex flex-wrap items-center gap-space-xs lg:gap-space-sm" id="filter-container">
+<button class="filter-pill active px-space-md py-space-xs font-label-caps text-label-caps uppercase tracking-widest transition-all duration-300 bg-primary text-on-primary" data-filter="all" type="button">
+        All Works
+      </button>
+<button class="filter-pill px-space-md py-space-xs font-label-caps text-label-caps uppercase tracking-widest transition-all duration-300 bg-surface-container text-on-surface hover:bg-surface-variant" data-filter="cuts" type="button">
+        Precision Cuts
+      </button>
+<button class="filter-pill px-space-md py-space-xs font-label-caps text-label-caps uppercase tracking-widest transition-all duration-300 bg-surface-container text-on-surface hover:bg-surface-variant" data-filter="color" type="button">
+        Dimensional Color
+      </button>
+<button class="filter-pill px-space-md py-space-xs font-label-caps text-label-caps uppercase tracking-widest transition-all duration-300 bg-surface-container text-on-surface hover:bg-surface-variant" data-filter="texture" type="button">
+        Texture &amp; Treatments
+      </button>
+<button class="filter-pill px-space-md py-space-xs font-label-caps text-label-caps uppercase tracking-widest transition-all duration-300 bg-surface-container text-on-surface hover:bg-surface-variant" data-filter="editorial" type="button">
+        Bridal &amp; Editorial
+      </button>
+<button class="filter-pill px-space-md py-space-xs font-label-caps text-label-caps uppercase tracking-widest transition-all duration-300 bg-surface-container text-on-surface hover:bg-surface-variant" data-filter="men" type="button">
+        Men's Styling
+      </button>
+</div>
+</section>
+<!-- Editorial Masonry / Dynamic Gallery Grid (12 Items) -->
+<section class="w-full max-w-[1440px] mx-auto px-margin lg:px-margin-desktop pb-space-2xl">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter" id="portfolio-grid">
+<!-- Item 1: Large Feature Editorial -->
+<article class="gallery-card lg:col-span-8 group relative overflow-hidden bg-surface-container cursor-pointer min-h-[520px]" data-category="color">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 min-h-[520px]" data-alt="High fashion editorial shot of model with multi-dimensional honey sun-kissed bronde balayage hair falling in loose textured waves against a warm architectural travertine studio background, soft natural sunlight from high side window" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrwRdeCuHkKWiEKpfBe5QB2nNHl9N5JRgTA7RWQ8M9SD--6Xo8eU5Jk8aGjeaJHfn8mowM-dK6eXnZR3Jyr66n2X34NTSrwCgLLPBOc8x0qubpqSCP02kG2cPUaRcMrP3ylglHQ6FQRKAptkIncGL-_8klBvl__9WiYQiuUVNAcQEcqwXw4PA1hOyVxMU1AtC4YylAATfd9ufu02DlPxDcapNrvGm3vdadQLpBigayjGg-HptWgfPZRQ">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-85 group-hover:opacity-95 transition-opacity flex flex-col justify-end p-space-lg text-surface-bright">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Dimensional Color</span>
+<span class="font-caption text-caption text-tertiary-fixed-dim">Ref #0941</span>
+</div>
+<h3 class="font-headline-md text-headline-md tracking-tight text-surface-bright mt-space-xs">Sunkissed Bronde Balayage</h3>
+<p class="font-body-sm text-body-sm text-surface-dim mt-1">Master Colorist: Marcus Sterling • Multi-zone glossing &amp; root shadow</p>
+<div class="mt-space-md pt-space-xs flex items-center gap-space-sm text-secondary-fixed font-label-caps text-label-caps uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
+<span class="material-symbols-outlined text-[18px]">zoom_in</span>
+<span>View Full Details &amp; Formula</span>
+</div>
+</div>
+</article>
+<!-- Item 2: Vertical Portrait -->
+<article class="gallery-card lg:col-span-4 group relative overflow-hidden bg-surface-container cursor-pointer min-h-[520px]" data-category="cuts">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 min-h-[520px]" data-alt="Micro razor sharp architectural bob haircut on a Japanese female model, precision geometric blunt perimeter, glassy dark brunette shine, minimalist concrete atelier backdrop with warm warm wood accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4wO5nopgUtLhuB0e3x2KJ3rNEUjh0HHXLlNlKGu668QBicfhUNci3xn8gb-3iGktSZJJcLSabRHZvol-4qYvw7ribaywatcjMvv7xgaDtxmasGn5IFNr1Chlm43ZMovh54jv1RL1eTyhG0MzvBK0GYCbOmsYTk3Sfx3fnVbkM3BPCdGA4Z6f0ZHW4zH6sMbm9IOFNjZ9BMUluacWZo3cXdZSgK4V4rRUdepkvBIbj-3ycfpIWTmKECA">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/25 to-transparent opacity-80 group-hover:opacity-95 transition-opacity flex flex-col justify-end p-space-lg text-surface-bright">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Precision Cuts</span>
+<span class="font-caption text-caption text-tertiary-fixed-dim">Ref #0942</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm tracking-tight text-surface-bright mt-space-xs">The Obsidian Sharp Bob</h3>
+<p class="font-body-sm text-body-sm text-surface-dim mt-1">Creative Director: Elena Rostova • Feathered dry-cut edge</p>
+<div class="mt-space-md pt-space-xs flex items-center gap-space-sm text-secondary-fixed font-label-caps text-label-caps uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
+<span class="material-symbols-outlined text-[18px]">zoom_in</span>
+<span>View Details</span>
+</div>
+</div>
+</article>
+<!-- Item 3: Bridal Editorial -->
+<article class="gallery-card lg:col-span-4 group relative overflow-hidden bg-surface-container cursor-pointer min-h-[420px]" data-category="editorial">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 min-h-[420px]" data-alt="Sculptural architectural bridal updo with ethereal soft tendrils, natural silk ribbon interwoven in soft dark brown hair, soft ambient candle glow and linen texture background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn7KDlXG-afrAwELORmh0IVv4yNG06D7gXte1NHADZ_DKM-QFsk6qrrRQUzcRfDA5tqCvvm-nwn3UbKNrKJJCkkeYeV2zucw1zlPsa2ArGXbNpfW21UL5Io-sOf13Un482uWm7FeI0l7kFBKmqvdYb2U29xj7Vwt26JLhGUimaYrGeTtq3o3QjJuKKumyqDP8lmfYcr9y_L1ISdzugL5z1WHWXzUz6wTk8jbHdIXkwbvQi_G6AF0MJiw">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity flex flex-col justify-end p-space-md text-surface-bright">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Bridal &amp; Haute Editorial</span>
+<h3 class="font-headline-sm text-headline-sm text-surface-bright mt-1">Sculpted Chignon Couture</h3>
+<p class="font-body-sm text-body-sm text-surface-dim mt-1">Stylist: Ananya Patel • Hand-pinned structural weave</p>
+<div class="mt-space-sm flex items-center gap-space-xs text-secondary-fixed font-label-caps text-label-caps uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>View Case</span>
+</div>
+</div>
+</article>
+<!-- Item 4: Men's Styling -->
+<article class="gallery-card lg:col-span-4 group relative overflow-hidden bg-surface-container cursor-pointer min-h-[420px]" data-category="men">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 min-h-[420px]" data-alt="High contrast portrait of a stylish male with clean scissor-over-comb modern taper fade, textured matte finish wavy pompadour, dramatic rim lighting in luxury barber suite" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhvYkjZvkckHDbKUth2fnZR6_QIvuUa1ddS7nqhltAoXvxPH2zKwmZzG998sSX_34f1Ic7dIhh_kxA-4D9H9tDLoi_VcBdGDHxJzGZ9aR9bYjrTCf0BDb0A0RmmSEwygRRS_p3sF72zIN23oKUAACQqU8tFdsQie9AXDtZpR3-aAyFWZfGzxn2lPYGIBc-QblakLOiRAZ-nsCAdWqbalrK_v5gihG2DEtGGZzv2JSnVu_xARhgyxfkOA">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity flex flex-col justify-end p-space-md text-surface-bright">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Men's Modern Tailoring</span>
+<h3 class="font-headline-sm text-headline-sm text-surface-bright mt-1">Textured Taper &amp; Scissor Fade</h3>
+<p class="font-body-sm text-body-sm text-surface-dim mt-1">Senior Barber: Kenneth Thorne • Matte clay profile</p>
+<div class="mt-space-sm flex items-center gap-space-xs text-secondary-fixed font-label-caps text-label-caps uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>View Case</span>
+</div>
+</div>
+</article>
+<!-- Item 5: Dimensional Color -->
+<article class="gallery-card lg:col-span-4 group relative overflow-hidden bg-surface-container cursor-pointer min-h-[420px]" data-category="color">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 min-h-[420px]" data-alt="Icy pearl blonde dimensional highlights on long layered cashmere hair, luminous cool platinum undertones, luxury salon mirror reflection with subtle champagne lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpUyPWtSAvHNckVuba_xjgfDBiKAapR0WorbXv-sxJ4GN2NURGtZzgOqZPvsex7IJKBM2Y0Kj261Zmx4tfF73imLALpLIMrnUVcWUROFFbzak5tzgdz-SK_T2JKYiKg98tUN0JWLf6Mluq_99roeJuhapT4w16Q0tkCUgXCyKGgxiEOw040pgzYxpq4CLb6fItekuVQcx0HNx3w6eGhKMjCqJQKEEnU6xQE8XZgwCMnx6WJFXkmFX21w">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity flex flex-col justify-end p-space-md text-surface-bright">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Dimensional Color</span>
+<h3 class="font-headline-sm text-headline-sm text-surface-bright mt-1">Glacier Pearl Luminescence</h3>
+<p class="font-body-sm text-body-sm text-surface-dim mt-1">Lead Colorist: Marcus Sterling • Dual-process lift</p>
+<div class="mt-space-sm flex items-center gap-space-xs text-secondary-fixed font-label-caps text-label-caps uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>View Case</span>
+</div>
+</div>
+</article>
+<!-- Item 6: Texture & Botanical Treatment -->
+<article class="gallery-card lg:col-span-5 group relative overflow-hidden bg-surface-container cursor-pointer min-h-[460px]" data-category="texture">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 min-h-[460px]" data-alt="Close up macro view of dense defined natural 3C curls with liquid amber serum gloss treatment, rich mahogany undertones, illuminated against warm sand lime-wash studio wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCYgAVrYZruKa_oxmUt9pltQdkbR1z81WNnqTWPONmjhTw8ayeeiYage21R6RgaxT46gczfW4xxMWCGnML1p2PNh12CtpAIBh0DGGHR4dIVKIF9lULEYMghkjUH7JfNFvu3-ry95Yn2jpuLDgMbPR45sY-10AJzZ7_HxVPn7Rj2pHtcZK3PeBB-GhIFpKvCDzHwF0va-uq06o90e1xSW0BkSXahzThhAYNG-YR6RyO75rZF1J2E_iSMg">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity flex flex-col justify-end p-space-lg text-surface-bright">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Texture &amp; Treatments</span>
+<h3 class="font-headline-md text-headline-md text-surface-bright mt-1">Botanical Curl Restoration</h3>
+<p class="font-body-sm text-body-sm text-surface-dim mt-1">Texture Specialist: Maya Sen • Bio-peptide hydration seal</p>
+<div class="mt-space-md flex items-center gap-space-xs text-secondary-fixed font-label-caps text-label-caps uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-[16px]">zoom_in</span>
+<span>Treatment Protocol</span>
+</div>
+</div>
+</article>
+<!-- Item 7: High-Fashion Voluminous Waves -->
+<article class="gallery-card lg:col-span-7 group relative overflow-hidden bg-surface-container cursor-pointer min-h-[460px]" data-category="editorial">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 min-h-[460px]" data-alt="Dramatic side profile of voluminous 1970s revival brushed Hollywood waves in rich dark chocolate brown hair, silk trench coat collar, warm ambient studio lamp lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLysNl3DoZznFY6YbfHbpADtLKbvBr50AJMegaJ6N7WawjzxaJiGocDE-GZsLf69ImEMJNQ9hhQoXpCzNkvEwpRYgc_V_KG1tLoR4Hmb3C1Y41HDmBGHC04aKDwkWnndFvQDtZDoTG5NgKE3AKKnIbBTNNogOCPfuske5Q298QZOUBm77F6RJhQxZdO3buuizUsyZGPm46ybhupQcnLg1psVco7JZfDqqs_sU6-wObJY2D0qlVX-iq2w">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity flex flex-col justify-end p-space-lg text-surface-bright">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Editorial Atelier</span>
+<span class="font-caption text-caption text-tertiary-fixed-dim">Vogue India Session</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-surface-bright mt-1">Velvet Hollywood Cascade</h3>
+<p class="font-body-sm text-body-sm text-surface-dim mt-1">Session Stylist: Elena Rostova • Thermal roller setting &amp; bespoke sheen</p>
+<div class="mt-space-md flex items-center gap-space-xs text-secondary-fixed font-label-caps text-label-caps uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-[16px]">zoom_in</span>
+<span>View Full Editorial</span>
+</div>
+</div>
+</article>
+<!-- Item 8: Precision French Fringe -->
+<article class="gallery-card lg:col-span-4 group relative overflow-hidden bg-surface-container cursor-pointer min-h-[400px]" data-category="cuts">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 min-h-[400px]" data-alt="Chic Parisian curtain fringe bangs with soft shoulder-length shag haircut on brunette model, relaxed effortless texture, daylight through tall atelier loft windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCq4F-BpLgTHcOkl6ssjDsHTRJbW-dprX_wmkpK4NgTu9r7CMSxeaiDfCYX-NOcwgInErvyZOsGH47CDoDKjsLUkyM1HhOJF9fOiyG5uC5Urbe-k5lRGzR9YMBoA71hIMk-s_ZjEBhiIPHZ6SEDmJxM36n6t7Oj7aj7bFK222ImVk5K3Ia-laQSiVwss9gVuun3zBQV4VizAAkjizps5yKsEMCS2Pt6CS2nMaRdX14SMiuiFc4hTNORXg">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity flex flex-col justify-end p-space-md text-surface-bright">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Precision Cuts</span>
+<h3 class="font-headline-sm text-headline-sm text-surface-bright mt-1">Parisian Curtain Shag</h3>
+<p class="font-body-sm text-body-sm text-surface-dim mt-1">Stylist: Julien Laurent • Freehand razor graduation</p>
+<div class="mt-space-sm flex items-center gap-space-xs text-secondary-fixed font-label-caps text-label-caps uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>View Style</span>
+</div>
+</div>
+</article>
+<!-- Item 9: Dimensional Copper Melt -->
+<article class="gallery-card lg:col-span-4 group relative overflow-hidden bg-surface-container cursor-pointer min-h-[400px]" data-category="color">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 min-h-[400px]" data-alt="Molten auburn and spiced copper balayage melt on long straight silk-pressed hair, liquid reflective amber tones, muted warm clay background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyYWK53x_2hp1ARmyRSATA5auPzOb4auKPjAVtjViWdtBedYiNTpNCS96aPfVLklNyAheUCd9GJrUZXvkVuchFYVWWC1t56tlLP9s3OTrOSxbKs8cq4cTjk4pl78wKMAwl_BDlQ3mm1rQgvsDxhu3GPc0ELUGg4zRPDbe-yDyEQkniOcAAYMd6zg4eTGtHX3pWpQ5TXmOV5XJTSl-LwjLpARdPZDkNVHWMfqhM9sR9M_RvQbpcMfn7Lw">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity flex flex-col justify-end p-space-md text-surface-bright">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Dimensional Color</span>
+<h3 class="font-headline-sm text-headline-sm text-surface-bright mt-1">Autumn Spiced Amber Melt</h3>
+<p class="font-body-sm text-body-sm text-surface-dim mt-1">Colorist: Marcus Sterling • Triple-tone foil placement</p>
+<div class="mt-space-sm flex items-center gap-space-xs text-secondary-fixed font-label-caps text-label-caps uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>View Style</span>
+</div>
+</div>
+</article>
+<!-- Item 10: Keratin Infusion Therapy -->
+<article class="gallery-card lg:col-span-4 group relative overflow-hidden bg-surface-container cursor-pointer min-h-[400px]" data-category="texture">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 min-h-[400px]" data-alt="Glass hair aesthetic, ultra-sleek mirror finish dark raven locks swinging in motion, pure luminescence, studio setting with gentle golden backlight reflection" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIyrsDemSyaibgtIfnpr8ju9Kl_0nOgrFpA5nnsVxygrZp6ays-j8MbGeMz_pwey-Ycyrb5Lhj-zY3-IqJ2txvmMDeKSqtKPtfsEMxQwRGjD2I_fQVz87iL0N7eYnT8h5K6Q_a5yGHmlwpCA_MVZ2J49mcNV80kRpmmGIkFcmdPG__gGHfRc9BR5P63EkVADJFrhUuhLSuJ_aMXUscGB8rjRinxHoogShF7z29GztXItDG0-y9sWFtqA">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity flex flex-col justify-end p-space-md text-surface-bright">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Texture &amp; Treatments</span>
+<h3 class="font-headline-sm text-headline-sm text-surface-bright mt-1">Liquid Silk Glass Polish</h3>
+<p class="font-body-sm text-body-sm text-surface-dim mt-1">Keratin Specialist: Maya Sen • Nanocavitation bonding</p>
+<div class="mt-space-sm flex items-center gap-space-xs text-secondary-fixed font-label-caps text-label-caps uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>View Style</span>
+</div>
+</div>
+</article>
+<!-- Item 11: Men's Clean Crop -->
+<article class="gallery-card lg:col-span-6 group relative overflow-hidden bg-surface-container cursor-pointer min-h-[420px]" data-category="men">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 min-h-[420px]" data-alt="Textured French crop men hairstyle with blunt micro fringe and low temple fade, male model with defined jawline in dark linen polo, warm architectural concrete studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_dse2cGE6Zqockbmnu_aW0qlW5DwMZtdIm2VAXEemdSto3wB_O9NIzmMJw2LEi5cG1dcbfW-lnRH5pgK4bj0QZlpxBr5DWXmu_Niqlnhy86OdkzfgHV2rFnK4gax3nWIJHDSBxOAzIHPuUdWd1cVx6dfK9LdieGYkDp8kseOE6Mf13ZVL1EbbC8MMNa_Zr4jn12qfMag_auTTWt9J7w3Eh8YbFXuPLgD36lE83FWpt62_r-0GVskHSA">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity flex flex-col justify-end p-space-lg text-surface-bright">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Men's Styling</span>
+<h3 class="font-headline-md text-headline-md text-surface-bright mt-1">Architectural Micro Crop</h3>
+<p class="font-body-sm text-body-sm text-surface-dim mt-1">Barber Stylist: Kenneth Thorne • Point-cut weight removal</p>
+<div class="mt-space-md flex items-center gap-space-xs text-secondary-fixed font-label-caps text-label-caps uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-[16px]">zoom_in</span>
+<span>Full Profile</span>
+</div>
+</div>
+</article>
+<!-- Item 12: Bridal Headpiece Editorial -->
+<article class="gallery-card lg:col-span-6 group relative overflow-hidden bg-surface-container cursor-pointer min-h-[420px]" data-category="editorial">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 min-h-[420px]" data-alt="Intricate South Asian contemporary bridal styling, interwoven jasmine buds and gold filigree jewelry through low textured braid, warm terracotta and brass atelier decor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbvdx4NcgDC67_ahc5zPLyKNQIrePmpDSg_WVs8zm1j-z75-AWi8weproVpZp2GIy8c1JRWLv-DKu8dBkVLBXjLyXIknbSFe_1ne03vixMKFwxlC-q1U_p043MFs6yxUwLBwqH7PgHmOuIv3306sHek_lIad5QcVaEKzpknti4YzY9zc_VAKoagk_RoUhItlCLkGvZMMI_i1WRnBM3eZxp9bnWjoJfMmoIg4KIldLp2tmrpp-_cEai9w">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity flex flex-col justify-end p-space-lg text-surface-bright">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Bridal &amp; Editorial</span>
+<h3 class="font-headline-md text-headline-md text-surface-bright mt-1">The Contemporary Heirloom Braid</h3>
+<p class="font-body-sm text-body-sm text-surface-dim mt-1">Principal Artist: Ananya Patel • Botanical integration</p>
+<div class="mt-space-md flex items-center gap-space-xs text-secondary-fixed font-label-caps text-label-caps uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-[16px]">zoom_in</span>
+<span>Editorial Spread</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Featured Transformation Spotlight: Case Study -->
+<section class="w-full bg-surface-container-high py-space-2xl">
+<div class="max-w-[1440px] mx-auto px-margin lg:px-margin-desktop">
+<div class="flex items-center gap-space-xs text-secondary mb-space-xs">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest">Case Study • Atelier Mumbai</span>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md pb-space-xl">
+<h2 class="font-headline-lg text-headline-lg tracking-tight text-on-surface">The Transmutation of Tone &amp; Volume</h2>
+<span class="font-caption text-caption text-on-surface-variant max-w-sm">From compromised brassy pigment to luminous, weightless champagne micro-dimension.</span>
+</div>
+<!-- Before / After Comparative Grid & Formulation Logbook -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<!-- Dual Comparative Imagery -->
+<div class="lg:col-span-7 flex flex-col sm:flex-row gap-space-md">
+<div class="w-full sm:w-1/2 flex flex-col space-y-space-xs">
+<div class="relative overflow-hidden aspect-[3/4] bg-surface-variant shadow-sm">
+<img class="w-full h-full object-cover grayscale opacity-90" data-alt="Before client photo showing uneven faded brassy orange bleached hair with dry frizzy ends, taken under standard salon consultation light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1I3ueZqPQB-h0kmkmOxrT8SCohAgIa7GadYeSmu3_bhx8FszEdN9zvjihTYtFXFYrPdZC8lvzqdy8ZPGD1_YFhlPtwGH9YFZpHz3Q0kG_xQ1NXZ6XC3J01hJglvS11QrP19lYBpLZwB14n332kkNOlprZygLTMMh11I-7fy98tAXHFc_POy-CnobRBEgi7MtG4ZCi2zsxBO7XrQScjlOoGOzv2v2meN3dU2th1UdnaYO7maFq9XC7oA">
+<div class="absolute top-space-sm left-space-sm bg-primary/80 backdrop-blur-sm px-space-sm py-1">
+<span class="font-label-caps text-label-caps uppercase text-surface-bright tracking-widest">Initial State</span>
+</div>
+</div>
+<p class="font-caption text-caption text-on-surface-variant pt-1">Compromised cuticle integrity with +8 levels of warm residual brass.</p>
+</div>
+<div class="w-full sm:w-1/2 flex flex-col space-y-space-xs">
+<div class="relative overflow-hidden aspect-[3/4] bg-surface shadow-sm">
+<img class="w-full h-full object-cover" data-alt="After transformation photo showing lustrous healthy champagne blonde babylights with soft curtain fringe and mirror gloss blowout, rich dimensionality and velvety movement" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_Zqb2v3tqDd2MwJOMsBrNUxLUM3c8h7mleLApD_Ia0ipf4YgVM7Mcrt4a3P4x9mcctHR5TH1Dka8npY9C69SekbosjMmGJglMvH7Bxn7hnVCxH7IOMeTfJPoU8HAwwqdxBKvr9HuErQhubtTuTZmE33-_Ce2mzDFySk9Wpc0OaDqeDnwXvPdzKtdc9GKecui_BReWAmR3Pt9s9tgG4TfurzGrBPwKEPp4lBrPmdPgpOdhnIrs5ocPIw">
+<div class="absolute top-space-sm left-space-sm bg-secondary px-space-sm py-1 shadow-sm">
+<span class="font-label-caps text-label-caps uppercase text-on-secondary tracking-widest">ZENZA Result</span>
+</div>
+</div>
+<p class="font-caption text-caption text-secondary font-medium pt-1">Bond-reconstructed structure with balanced neutral beige tones.</p>
+</div>
+</div>
+<!-- Technical Formulation Notes & Client Consultation Story -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-space-xl flex flex-col justify-between shadow-sm">
+<div class="space-y-space-md">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Client Narrative</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">Priya M., Mumbai</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-light mt-space-xs leading-relaxed">
+                "After multiple chemical processes elsewhere, my hair had lost its natural swing and luster. Marcus and the team mapped out a three-stage restorative protocol rather than an aggressive quick-fix. The result felt miraculous."
+              </p>
+</div>
+<!-- Formulation Specs -->
+<div class="space-y-space-sm pt-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface">Formula &amp; Method Specification</span>
+<div class="p-space-sm bg-surface-container-low space-y-space-xs">
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Decolorizing Matrix</span>
+<span class="font-medium text-on-surface">Gentle Clay 20-Vol + Bond-Builder</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Tonal Neutralizer</span>
+<span class="font-medium text-on-surface">9.12 Champagne Ice Demi-Gloss</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Cuticle Infusion</span>
+<span class="font-medium text-on-surface">Japanese Ultrasonic Protein Shield</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Session Duration</span>
+<span class="font-medium text-on-surface">4 Hours, 15 Minutes</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Stylist Credits -->
+<div class="pt-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container font-headline-sm">
+                MS
+              </div>
+<div>
+<p class="font-title-md text-title-md text-on-surface">Marcus Sterling</p>
+<p class="font-caption text-caption text-on-surface-variant">Senior Artistic Director</p>
+</div>
+</div>
+<a class="font-label-caps text-label-caps uppercase text-secondary tracking-widest hover:text-on-surface transition-colors flex items-center gap-1" href="#">
+              Book Marcus <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Studio Atmosphere Visual Strip -->
+<section class="w-full max-w-[1440px] mx-auto px-margin lg:px-margin-desktop py-space-2xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<p class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">The Sanctuaries</p>
+<h2 class="font-headline-lg text-headline-lg tracking-tight text-on-surface mt-1">Atmosphere of Stillness</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md font-light">
+        Every appointment is housed within sensory calm: sound-insulated wash alcoves, filtered amber daylight, and private refreshment pavilions.
+      </p>
+</div>
+<!-- 3-Part Strip Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Sanctuary 1 -->
+<div class="group relative overflow-hidden bg-surface-container min-h-[360px] shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 min-h-[360px]" data-alt="Quiet private hair wash suite with reclining black leather washbeds, dim soothing mood lights, dark textured stone walls, and warm indirect floor illumination" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChNkkXV_tcc3zH4oeaOGV-imGwH1XCNGuGBA3Gou_wBqAuq9im_xNcg3Mswc2BU1SBUaJnaq6LBHM_k4ri4jQaeyQjDyowPKvzqgKiuKu4lGcKyIbOd2UcOEMsleHHqJK-0_d4jN6zvWC1D7vDTGQVGSrA_Ib7P5aR8X-qLWYmq42jhtArzIIHUOgfu8Js9LK7AL0hr3ZcNKs7Dt5xaozsI-Mb7HE1n35doHUYDzwaA2KedoLegFg-aQ">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex flex-col justify-end p-space-md text-surface-bright">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Zone 01</span>
+<h4 class="font-headline-sm text-headline-sm text-surface-bright mt-1">Sensory Wash Sanctuary</h4>
+<p class="font-caption text-caption text-tertiary-fixed-dim">Head spa shiatsu therapy &amp; chromotherapy lighting</p>
+</div>
+</div>
+<!-- Sanctuary 2 -->
+<div class="group relative overflow-hidden bg-surface-container min-h-[360px] shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 min-h-[360px]" data-alt="Spacious luxury minimalist styling station with large arched brass full length mirrors, fluted light oak woodwork, clean marble counter, and soft focused warm pendant lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3AYz_I-Xb6OYd5JyadJsHawqOKyOswRSV8U3LWlLVuwc39ZZ9SI0mARzddMESFg--t3rIGgZaYcN3ygJtVAFW6kfVRT3C9p-es5Ijs_Ym8FrtM_ged7mKhLTD90WuqLxofE-k9Rt-l1cN3HolAiZ3X3Tq2P82OWNhqsmuf9wNEjfR4DtvxfGgVIOjLNozMVJp2gztxQI5qxvMzfMrIzQKxL1iCYDwPuQEQaIHouKfVaMiupqZdQcOiQ">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex flex-col justify-end p-space-md text-surface-bright">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Zone 02</span>
+<h4 class="font-headline-sm text-headline-sm text-surface-bright mt-1">The Bespoke Mirror Bays</h4>
+<p class="font-caption text-caption text-tertiary-fixed-dim">Color-calibrated 98 CRI lighting for true daylight tonality</p>
+</div>
+</div>
+<!-- Sanctuary 3 -->
+<div class="group relative overflow-hidden bg-surface-container min-h-[360px] shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 min-h-[360px]" data-alt="Sophisticated espresso and herbal tea lounge inside luxury salon with travertine stone bar, curated design magazines, linen armchairs and warm earthen ceramics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKlRzi0I7FNGJj6hE3nSeNAk4LRuvVxZgRVgOk7Bai5SX3cQ_Lpd22JYViNxFrbXbwfoOfXbmj5J5VuMU9-vGIYvgxoye5-HuEsa2fxkw5I1wIv8Sm18S5U12riu6oLqr1yMhn22FVL0meMiYLhKAPS6wgQGnr_7bYajKiB7J6M18MzTKq-D2Sc_wyfLTYeqFOdSRMs7tRmKRySOgDdRlS_ch4K5_-fWA_Vx76UkGGW0OhQ-NZUlMP4Q">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex flex-col justify-end p-space-md text-surface-bright">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Zone 03</span>
+<h4 class="font-headline-sm text-headline-sm text-surface-bright mt-1">Botanical Beverage Lounge</h4>
+<p class="font-caption text-caption text-tertiary-fixed-dim">Artisanal single-origin pour-overs and cold-pressed elixirs</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Lightbox Modal -->
+<div class="fixed inset-0 z-50 bg-primary/95 backdrop-blur-md hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-space-md lg:p-space-xl" id="lightbox-modal">
+<div class="relative w-full max-w-5xl bg-surface-container-lowest text-on-surface shadow-xl flex flex-col md:flex-row overflow-hidden max-h-[90vh]">
+<!-- Close Button -->
+<button class="absolute top-space-md right-space-md z-20 w-10 h-10 bg-primary/80 text-surface-bright flex items-center justify-center hover:bg-primary transition-colors" id="lightbox-close" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<!-- Modal Image -->
+<div class="w-full md:w-3/5 bg-surface-dim relative flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover max-h-[500px] md:max-h-[700px]" data-alt="Enlarged detailed high fashion editorial salon look with pristine focus and soft golden studio backdrop" id="lightbox-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv9yGbIlAsXl4PmzjgCUxfSeGqNmL-8rEel5Z2YUa-x8frzl4qJ4d4VO9YCvWafSa4sZucn4CS5CQ-CNyiL5MSKksM1bohN7spBLpBE2oNglIqntGfPsSgCgmtiz6dtiVvxwVv4WBulqwXqoI8RS1nUJ8nkBZjuF4SaNHFmzWtTy-t0p2l9m4jNid1OiHrKO7xu5Tpe2QWT94ceZUr6Zl5M5AkeK29fsLnqlvpnmAB8yJe_Yav_UBWHw">
+</div>
+<!-- Modal Info Details -->
+<div class="w-full md:w-2/5 p-space-lg lg:p-space-xl flex flex-col justify-between overflow-y-auto">
+<div class="space-y-space-md">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary" id="lightbox-cat">Category</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1" id="lightbox-title">Look Title</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1" id="lightbox-stylist">Stylist / Treatment Details</p>
+</div>
+<div class="space-y-space-xs pt-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<p><strong class="text-on-surface">Consultation Focus:</strong> Tailored face-framing angles matching bone structure and personal daily maintenance routine.</p>
+<p><strong class="text-on-surface">Formulation Notes:</strong> Ammonia-free oil delivery system infused with argan and botanical squalane.</p>
+<p><strong class="text-on-surface">Recommended Maintenance:</strong> 8–10 weeks for toner refresh, 6 weeks for perimeter shaping.</p>
+</div>
+</div>
+<div class="pt-space-lg space-y-space-xs">
+<a class="w-full block text-center bg-primary text-on-primary py-space-sm font-label-caps text-label-caps uppercase tracking-widest hover:bg-secondary transition-colors" href="#">
+            Reserve This Stylist
+          </a>
+<p class="font-caption text-caption text-center text-outline-variant">Complimentary initial 15-minute consultation included.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Seamless Conversion CTA Section -->
+<section class="w-full bg-secondary text-on-secondary py-space-2xl">
+<div class="max-w-[1440px] mx-auto px-margin lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-8 space-y-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-[1px] bg-secondary-fixed"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Your Transformation Begins</span>
+</div>
+<h2 class="font-display-lg text-display-lg tracking-tight font-normal leading-tight">Like What You See?<br>Book Your Studio Stylist.</h2>
+<p class="font-body-lg text-body-lg text-secondary-fixed font-light max-w-xl pt-space-xs">
+            Our atelier seats are intentionally limited to preserve focused, unhurried attention for every guest. Reserve your personal styling experience today.
+          </p>
+</div>
+<div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-space-md justify-end">
+<a class="w-full text-center bg-surface-bright text-on-surface px-space-xl py-space-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-secondary-fixed transition-colors shadow-md" href="#">
+            Schedule Appointment
+          </a>
+<a class="w-full text-center bg-transparent text-surface-bright border border-surface-bright/40 px-space-xl py-space-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-bright hover:text-on-surface transition-colors" href="#">
+            Consult via WhatsApp
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Micro-Interactions Script -->
+<script>
+    (function () {
+      const filterPills = document.querySelectorAll('.filter-pill');
+      const cards = document.querySelectorAll('.gallery-card');
+      const modal = document.getElementById('lightbox-modal');
+      const modalClose = document.getElementById('lightbox-close');
+      const modalImg = document.getElementById('lightbox-img');
+      const modalTitle = document.getElementById('lightbox-title');
+      const modalCat = document.getElementById('lightbox-cat');
+      const modalStylist = document.getElementById('lightbox-stylist');
+
+      // Category Filtering Logic
+      filterPills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          filterPills.forEach(p => {
+            p.classList.remove('bg-primary', 'text-on-primary', 'active');
+            p.classList.add('bg-surface-container', 'text-on-surface');
+          });
+
+          pill.classList.remove('bg-surface-container', 'text-on-surface');
+          pill.classList.add('bg-primary', 'text-on-primary', 'active');
+
+          const category = pill.getAttribute('data-filter');
+
+          cards.forEach(card => {
+            const cardCat = card.getAttribute('data-category');
+            if (category === 'all' || cardCat === category) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // Lightbox Trigger
+      cards.forEach(card => {
+        card.addEventListener('click', () => {
+          const imgElem = card.querySelector('img');
+          const titleElem = card.querySelector('h3');
+          const catElem = card.querySelector('.font-label-caps');
+          const descElem = card.querySelector('.font-body-sm');
+
+          if (imgElem && modalImg) {
+            modalImg.src = imgElem.src;
+            modalImg.setAttribute('data-alt', imgElem.getAttribute('data-alt') || '');
+          }
+          if (titleElem && modalTitle) modalTitle.textContent = titleElem.textContent;
+          if (catElem && modalCat) modalCat.textContent = catElem.textContent;
+          if (descElem && modalStylist) modalStylist.textContent = descElem.textContent;
+
+          modal.classList.remove('hidden');
+          setTimeout(() => {
+            modal.classList.remove('opacity-0');
+          }, 10);
+        });
+      });
+
+      // Close Lightbox
+      function closeModal() {
+        modal.classList.add('opacity-0');
+        setTimeout(() => {
+          modal.classList.add('hidden');
+        }, 300);
+      }
+
+      if (modalClose) {
+        modalClose.addEventListener('click', closeModal);
+      }
+      if (modal) {
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) closeModal();
+        });
+      }
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+          closeModal();
+        }
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-tertiary-container text-surface-bright pt-space-2xl pb-space-xl"><div class="max-w-[1440px] mx-auto px-margin lg:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-desktop pb-space-2xl"><div class="lg:col-span-4 flex flex-col justify-between space-y-space-md"><div class="space-y-space-xs"><p class="font-headline-md text-headline-md tracking-wider text-surface-bright uppercase">ZENZA</p><p class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Hair Studio</p></div><p class="font-body-lg text-body-lg italic text-tertiary-fixed-dim pr-space-lg">Where Artistry Meets Individuality.</p><div class="pt-space-sm"><p class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed mb-space-xs">Exclusive Dispatches</p><div class="flex items-center bg-surface-container-lowest/5 p-space-xs max-w-sm"><input class="bg-transparent font-body-sm text-body-sm text-surface-bright placeholder:text-outline-variant px-space-sm py-space-xs focus:outline-none flex-grow" placeholder="Enter your email address" type="email"><button class="bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps uppercase tracking-widest px-space-md py-space-xs hover:bg-surface-bright transition-colors" type="button">Join</button></div></div></div><div class="lg:col-span-3 space-y-space-md"><p class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Studio Hours</p><div class="space-y-space-xs font-body-sm text-body-sm text-tertiary-fixed-dim"><div class="flex justify-between py-space-xs"><span>Monday – Saturday</span><span class="text-surface-bright">10:00 AM – 9:00 PM</span></div><div class="flex justify-between py-space-xs"><span>Sunday</span><span class="text-surface-bright">11:00 AM – 7:00 PM</span></div><p class="font-caption text-caption text-outline-variant pt-space-xs">Private atelier reservations available upon consultation.</p></div></div><div class="lg:col-span-3 space-y-space-md"><p class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Ateliers</p><div class="space-y-space-md font-body-sm text-body-sm text-tertiary-fixed-dim"><div class="space-y-space-xs"><p class="font-title-md text-title-md text-surface-bright">Mumbai Atelier</p><p>42 Altamount Road, Cumballa Hill</p><p>Mumbai, Maharashtra 400026</p><p class="text-surface-bright pt-space-xs">+91 22 2380 4411</p></div><div class="space-y-space-xs"><p class="font-title-md text-title-md text-surface-bright">Delhi Atelier</p><p>The Manor, 77 Friends Colony West</p><p>New Delhi, Delhi 110065</p><p class="text-surface-bright pt-space-xs">+91 11 4105 8820</p></div></div></div><div class="lg:col-span-2 space-y-space-md"><p class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Connect</p><div class="flex flex-col space-y-space-sm font-label-caps text-label-caps uppercase tracking-widest text-tertiary-fixed-dim"><a class="hover:text-surface-bright transition-colors flex items-center gap-space-xs" href="#"><span class="material-symbols-outlined text-[16px]">chat</span>WhatsApp Concierge</a><a class="hover:text-surface-bright transition-colors flex items-center gap-space-xs" href="#"><span class="material-symbols-outlined text-[16px]">photo_camera</span>Instagram Journal</a><a class="hover:text-surface-bright transition-colors flex items-center gap-space-xs" href="#"><span class="material-symbols-outlined text-[16px]">mail</span>atelier@zenzastudio.com</a></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between font-caption text-caption text-outline-variant gap-space-md"><p>© 2025 ZENZA Hair Studio Private Limited. All privileges reserved.</p><div class="flex items-center gap-space-lg font-label-caps text-label-caps uppercase tracking-widest"><a class="hover:text-surface-bright transition-colors" href="#">Privacy Policy</a><a class="hover:text-surface-bright transition-colors" href="#">Terms of Service</a><a class="hover:text-surface-bright transition-colors" href="#">Salon Etiquette</a></div></div></div></footer></body></html>

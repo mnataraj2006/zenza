@@ -1,0 +1,645 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-container": "#1c1b1b", "on-tertiary": "#ffffff", "surface-bright": "#fff8f3", "on-surface-variant": "#444748", "on-tertiary-fixed-variant": "#4c4641", "secondary-fixed": "#fcdeb4", "primary-fixed": "#e5e2e1", "on-error": "#ffffff", "tertiary-fixed-dim": "#cfc5be", "on-primary-fixed": "#1c1b1b", "tertiary": "#000000", "error-container": "#ffdad6", "primary-fixed-dim": "#c8c6c5", "background": "#fff8f3", "secondary-container": "#f9dbb1", "surface": "#fff8f3", "on-secondary-fixed-variant": "#574424", "outline-variant": "#c4c7c7", "on-surface": "#1f1b17", "on-tertiary-fixed": "#1f1b17", "surface-variant": "#eae1da", "on-tertiary-container": "#8a827d", "on-background": "#1f1b17", "secondary-fixed-dim": "#dfc29a", "surface-tint": "#5f5e5e", "error": "#ba1a1a", "tertiary-container": "#1f1b17", "inverse-surface": "#34302b", "secondary": "#705b3a", "inverse-primary": "#c8c6c5", "inverse-on-surface": "#f8efe8", "on-primary": "#ffffff", "on-secondary-fixed": "#271901", "on-primary-fixed-variant": "#474746", "primary": "#000000", "on-secondary-container": "#755f3e", "on-error-container": "#93000a", "outline": "#747878", "on-primary-container": "#858383", "surface-container-lowest": "#ffffff", "surface-dim": "#e1d9d1", "surface-container-high": "#efe7df", "surface-container-low": "#fbf2ea", "tertiary-fixed": "#ebe0da", "on-secondary": "#ffffff", "surface-container": "#f5ece5", "surface-container-highest": "#eae1da" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "margin-desktop": "5rem", "space-md": "1rem", "space-xs": "0.25rem", "margin-tablet": "3rem", "space-xl": "3rem", "space-2xl": "5rem", "gutter-desktop": "2.5rem", "gutter": "1.5rem", "space-lg": "1.75rem", "margin": "1.5rem" }, "fontFamily": { "headline-md": ["Playfair Display"], "display-lg-mobile": ["Playfair Display"], "display-xl-mobile": ["Playfair Display"], "caption": ["Manrope"], "title-md": ["Manrope"], "body-md": ["Manrope"], "headline-lg": ["Playfair Display"], "headline-sm": ["Playfair Display"], "display-lg": ["Playfair Display"], "label-caps": ["Manrope"], "body-sm": ["Manrope"], "display-xl": ["Playfair Display"], "body-lg": ["Manrope"], "headline-lg-mobile": ["Playfair Display"] }, "fontSize": { "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "400" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "display-xl-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "caption": ["12px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "300" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "500" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], "display-xl": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "300" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-margin lg:px-margin-desktop flex items-center justify-between"><a href="index.html" class="flex items-center gap-space-md"><span class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-wider font-normal">ZENZA</span><span class="hidden sm:inline-block font-label-caps text-label-caps uppercase text-secondary tracking-widest pl-space-xs">HAIR STUDIO</span></a><nav class="hidden lg:flex items-center gap-gutter-desktop" data-active-classes="text-on-surface font-semibold"><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="home" href="index.html">Home</a><a aria-current="page" class="uppercase transition-colors tracking-widest text-on-surface font-semibold" data-path="services" href="services.html">Services</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="gallery" href="gallery.html">Gallery</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="about-us" href="about.html">About Us</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="stylists" href="about.html#stylists">Stylists</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="contact" href="contact.html">Contact</a></nav><div class="flex items-center gap-space-md"><a class="bg-secondary text-on-secondary px-space-md py-space-sm font-label-caps text-label-caps uppercase tracking-widest hover:bg-on-surface transition-colors shadow-sm" data-path="booking" href="booking.html">Book Appointment</a><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1Ws-VfcQHvzwgnASt0BceRTtq33K09FtBFabXV8mPKO3lZ_vfHH0_Wu0uaWoeAAn0osTY6ALwXb-RWWXdeuFnAxL7l3UVxjg7r9JnkZqGtMHp6rMmC1Usiii9pi93hKolPwcOonwmfBLX-al0b4OOwSBgAVevT-Wfs6rF51jMsS1-jIx2ctbkbku70-VPUqqmuGA8kwdiqv_G-GJbF_XMhpg4dCTjyEBzwY8KwH_3KbU98jNoKSQnsRcYCK"></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<!-- Editorial Header Section -->
+<section class="w-full max-w-[1440px] mx-auto px-margin lg:px-margin-desktop pt-space-xl pb-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-gutter pb-space-lg">
+<div class="max-w-2xl space-y-space-xs">
+<div class="flex items-center gap-space-sm text-secondary">
+<span class="font-label-caps text-label-caps uppercase tracking-widest">The Portfolio &amp; Treatment Menu</span>
+<span class="w-8 h-[1px] bg-secondary/40"></span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant/70">Atelier Volume 04</span>
+</div>
+<h1 class="font-display-xl text-display-xl tracking-tight text-on-surface">OUR CRAFT &amp; SERVICES</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl pt-space-xs">
+          Bespoke haircare, architectural precision cuts, and master color alchemy tailored to your individual aesthetic.
+        </p>
+</div>
+<div class="flex items-center gap-gutter self-start lg:self-end text-right">
+<div class="hidden md:flex flex-col text-left">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Flagship Ateliers</span>
+<span class="font-caption text-caption text-on-surface-variant">Mumbai • New Delhi</span>
+</div>
+<div class="h-10 w-[1px] bg-surface-dim hidden md:block"></div>
+<div class="flex flex-col text-left">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Formula Standard</span>
+<span class="font-caption text-caption text-on-surface-variant">Davines • Oribe Gold</span>
+</div>
+</div>
+</div>
+<!-- Category Filter Bar -->
+<div class="w-full overflow-x-auto py-space-sm scrollbar-none">
+<div class="flex items-center gap-space-xs min-w-max" id="service-filters">
+<button class="filter-btn bg-primary text-on-primary px-space-md py-space-sm font-label-caps text-label-caps uppercase tracking-widest transition-all duration-200" data-filter="all" type="button">
+          All Services
+        </button>
+<button class="filter-btn bg-surface-container text-on-surface px-space-md py-space-sm font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-variant transition-all duration-200" data-filter="precision-haircuts" type="button">
+          Precision Haircuts
+        </button>
+<button class="filter-btn bg-surface-container text-on-surface px-space-md py-space-sm font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-variant transition-all duration-200" data-filter="color-highlights" type="button">
+          Color &amp; Highlights
+        </button>
+<button class="filter-btn bg-surface-container text-on-surface px-space-md py-space-sm font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-variant transition-all duration-200" data-filter="keratin-texture" type="button">
+          Keratin &amp; Texture
+        </button>
+<button class="filter-btn bg-surface-container text-on-surface px-space-md py-space-sm font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-variant transition-all duration-200" data-filter="scalp-hair-spa" type="button">
+          Scalp &amp; Hair Spa
+        </button>
+<button class="filter-btn bg-surface-container text-on-surface px-space-md py-space-sm font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-variant transition-all duration-200" data-filter="bridal-event" type="button">
+          Bridal &amp; Red Carpet
+        </button>
+<button class="filter-btn bg-surface-container text-on-surface px-space-md py-space-sm font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-variant transition-all duration-200" data-filter="mens-grooming" type="button">
+          Men's Grooming
+        </button>
+</div>
+</div>
+</section>
+<!-- Editorial Services Roster / Bento Grid -->
+<section class="w-full max-w-[1440px] mx-auto px-margin lg:px-margin-desktop py-space-lg">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter" id="service-grid">
+<!-- Item 1: Precision Cut -->
+<article class="service-item group flex flex-col bg-surface-container-low transition-all duration-300 hover:bg-surface-container-lowest" data-category="precision-haircuts">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="High-fashion editorial portrait of a woman with sharp architectural blunt bob haircut, platinum blonde tone, photographed in natural Parisian morning light with soft shadows, minimalist aesthetic, warm ivory and muted beige background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwppy_OvwBTItI6oG93EMuLZf3miQMLr81CKTaq8QVHg0ygy9InavaTDUzxRzwH3FH95naKyjjoVl45T2qnIu414X_m7QT_qmMRto23KifpYN69sHvh83uLOI92eIneiGeQd57aajIokc9TGlcMimOXsHK644MIPePFnfN6lfS5g9NqcRJg14zjYc1Q0dUuoDLYDgDW0sCpJsCwlvfEJ09Au-ZjQCYWpm8bTjFnVuJgjUURU0F4SPQjA">
+<div class="absolute top-4 left-4 bg-tertiary-container/90 backdrop-blur-sm text-surface-bright px-3 py-1 font-label-caps text-label-caps uppercase tracking-widest">
+            Haircut • Director
+          </div>
+<div class="absolute bottom-4 right-4 bg-surface-bright text-on-surface px-3 py-1 font-caption text-caption shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 75 mins
+          </div>
+</div>
+<div class="p-space-lg flex flex-col flex-grow justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex justify-between items-baseline gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Atelier Director Cut</h3>
+<span class="font-title-md text-title-md text-secondary whitespace-nowrap">₹4,500</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Comprehensive geometric consultation, customized dry sculpting, botanical hair bath, tailored scalp press, and master structural blow-dry.
+            </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Mumbai &amp; Delhi</span>
+<button class="book-service-btn bg-primary text-on-primary px-space-md py-space-sm font-label-caps text-label-caps uppercase tracking-widest hover:bg-secondary transition-colors" data-service-name="Atelier Director Cut" data-service-price="₹4,500" type="button">
+              Book Service
+            </button>
+</div>
+</div>
+</article>
+<!-- Item 2: Senior Cut -->
+<article class="service-item group flex flex-col bg-surface-container-low transition-all duration-300 hover:bg-surface-container-lowest" data-category="precision-haircuts">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close up fine hair photography showcasing effortless textured layers on a model with honey-toned wavy strands, warm studio light, editorial editorial beauty shot against warm sand background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6_Vc2io3XewABJSCyLK24reVrjQA9QQ4L9mSlKY0qy73r837Yu0EKS8aeRLqYEJHMMkOf7Um6lCxgZidjUfWi8ea9YcfAX1pRdgUItYKSX2EKaZmbFt49EVbMBY3dBzkdoy0TZyU11MOYKu0LbM2wAeopnV3J8gLsf3qBK_Zumtw8gycERcF--9QDAVOsvoJ2lUpsMmOEEo6VN0YruFp103wIh3Nidxpn7A2wdiwV7FcAO5kezkSEnA">
+<div class="absolute top-4 left-4 bg-tertiary-container/90 backdrop-blur-sm text-surface-bright px-3 py-1 font-label-caps text-label-caps uppercase tracking-widest">
+            Haircut • Senior Stylist
+          </div>
+<div class="absolute bottom-4 right-4 bg-surface-bright text-on-surface px-3 py-1 font-caption text-caption shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 60 mins
+          </div>
+</div>
+<div class="p-space-lg flex flex-col flex-grow justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex justify-between items-baseline gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Senior Stylist Cut &amp; Blowdry</h3>
+<span class="font-title-md text-title-md text-secondary whitespace-nowrap">₹2,800</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Anatomic layer framing designed around facial symmetry, accompanied by Davines nourishing cleansing and bespoke voluminous finishing.
+            </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary">All Stylists</span>
+<button class="book-service-btn bg-primary text-on-primary px-space-md py-space-sm font-label-caps text-label-caps uppercase tracking-widest hover:bg-secondary transition-colors" data-service-name="Senior Stylist Cut &amp; Blowdry" data-service-price="₹2,800" type="button">
+              Book Service
+            </button>
+</div>
+</div>
+</article>
+<!-- Item 3: Bespoke Balayage -->
+<article class="service-item group flex flex-col bg-surface-container-low transition-all duration-300 hover:bg-surface-container-lowest" data-category="color-highlights">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Luxury fashion model photographed from the back displaying seamless hand-painted champagne balayage highlights blending into dark espresso roots, soft silk waves, magazine aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfgtHWZd1Qy3Co4KlzvTHbOG46lT60jLVBbelflu1TC6oT3GLzv9W0DqkOfz0Xmayo0YY8fdWEitOTKud5K1zW8HQRfjzz-rqQvELD1ylTH-tAx0dwv2Vz4c4nZ3N5VONYpNYu_0jYZnqfA3Xz9cRa_bSsZIyVf3a75Z_PJ4dR2FnozdNMw_V9U29DUzZoI2ZgbH_72mvqorqvINsuEwAWqFm8O1JqEkLI0NqSSVYt6zqfGuACnnMjXw">
+<div class="absolute top-4 left-4 bg-tertiary-container/90 backdrop-blur-sm text-surface-bright px-3 py-1 font-label-caps text-label-caps uppercase tracking-widest">
+            Color • Master Foilayage
+          </div>
+<div class="absolute bottom-4 right-4 bg-surface-bright text-on-surface px-3 py-1 font-caption text-caption shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 180 mins
+          </div>
+</div>
+<div class="p-space-lg flex flex-col flex-grow justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex justify-between items-baseline gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Bespoke Balayage &amp; Foilayage</h3>
+<span class="font-title-md text-title-md text-secondary whitespace-nowrap">₹12,500+</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Freehand art painting combined with micro-fine foils for dimensional diffusion, inclusive of acid gloss toning, bond shield, and sealing treatment.
+            </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Toner &amp; Bond Included</span>
+<button class="book-service-btn bg-primary text-on-primary px-space-md py-space-sm font-label-caps text-label-caps uppercase tracking-widest hover:bg-secondary transition-colors" data-service-name="Bespoke Balayage &amp; Foilayage" data-service-price="₹12,500+" type="button">
+              Book Service
+            </button>
+</div>
+</div>
+</article>
+<!-- Item 4: Global Color -->
+<article class="service-item group flex flex-col bg-surface-container-low transition-all duration-300 hover:bg-surface-container-lowest" data-category="color-highlights">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="High gloss deep mocha brown hair reflection on elegant model, silky mirror-shine finish, dramatic cinematic low-key studio lighting with warm gold undertones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAlGmVGyuZttHhF0lju4jt_0ypfpbDaQ6S4Nt7NrY74x1VkiGHMY8cH03XD4upXOOwAT3lcvYPHYu0HM8IBdKOvHEEMXoBwAuOXNmisDrU_nACDDCVCG3WwcLPDRKhqffzNEKBJmyLYzH9xmAX7VcodcMEfNpoNZfRKn6iY54AQYhI4XtqfpWY66ICcOnBUxt8VGuJngfWaCvyQcIh5zrR5QlWwog9ApK6LWmSfzuGGGQFslrOabIGow">
+<div class="absolute top-4 left-4 bg-tertiary-container/90 backdrop-blur-sm text-surface-bright px-3 py-1 font-label-caps text-label-caps uppercase tracking-widest">
+            Color • Gloss Alchemy
+          </div>
+<div class="absolute bottom-4 right-4 bg-surface-bright text-on-surface px-3 py-1 font-caption text-caption shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 120 mins
+          </div>
+</div>
+<div class="p-space-lg flex flex-col flex-grow justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex justify-between items-baseline gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Global High-Gloss Color</h3>
+<span class="font-title-md text-title-md text-secondary whitespace-nowrap">₹7,500+</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Full-saturation ammonia-conscious pigment infusion enriched with omega lipid complexes for radiant light-reflection and velvet cuticle health.
+            </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Davines Mask System</span>
+<button class="book-service-btn bg-primary text-on-primary px-space-md py-space-sm font-label-caps text-label-caps uppercase tracking-widest hover:bg-secondary transition-colors" data-service-name="Global High-Gloss Color" data-service-price="₹7,500+" type="button">
+              Book Service
+            </button>
+</div>
+</div>
+</article>
+<!-- Item 5: Root Retouch -->
+<article class="service-item group flex flex-col bg-surface-container-low transition-all duration-300 hover:bg-surface-container-lowest" data-category="color-highlights">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Portrait of an elegant mature woman with impeccably blended natural chestnut hair, pristine hairline color finish, calm luxury salon interior background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmL6_FgYnG1AO530vjPnNBg5knLkey6OV4zTIVdSeqFC_jRF8dZ_rS21Q8-1-0iP2rPUulIiV5th6E5WknOCOQ-lGoxGEA85tizCDIeXkqZTw8jS5aRyDq0rmTPAZMULwr8QOvJr91T1tl_bo1_DvuhUZiA9rdHmU7FGYFN0RcqDvX-m6lWz85YtjeeRTcKm4GSz_3FN-atm7dj4mLAulfXyTzr0sbl5-7ywH9_thFyQOSUNhVuITyXw">
+<div class="absolute top-4 left-4 bg-tertiary-container/90 backdrop-blur-sm text-surface-bright px-3 py-1 font-label-caps text-label-caps uppercase tracking-widest">
+            Color • Precision Match
+          </div>
+<div class="absolute bottom-4 right-4 bg-surface-bright text-on-surface px-3 py-1 font-caption text-caption shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 90 mins
+          </div>
+</div>
+<div class="p-space-lg flex flex-col flex-grow justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex justify-between items-baseline gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Root Retouch &amp; Gloss</h3>
+<span class="font-title-md text-title-md text-secondary whitespace-nowrap">₹4,500</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Seamless regrowth coverage combined with an instant mid-length gloss glaze to harmonize vitality and balance moisture across the hair shaft.
+            </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Up to 2 inches</span>
+<button class="book-service-btn bg-primary text-on-primary px-space-md py-space-sm font-label-caps text-label-caps uppercase tracking-widest hover:bg-secondary transition-colors" data-service-name="Root Retouch &amp; Gloss" data-service-price="₹4,500" type="button">
+              Book Service
+            </button>
+</div>
+</div>
+</article>
+<!-- Item 6: Japanese Silk Keratin -->
+<article class="service-item group flex flex-col bg-surface-container-low transition-all duration-300 hover:bg-surface-container-lowest" data-category="keratin-texture">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Sleek glass hair treatment result, perfectly straight ultra glossy dark hair cascading down the back of a luxury salon client, luminous reflection, warm serene lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALdYmzPbWPRxD51-Z903-YbGVYw6Ux9Dynf5CXs2VxzWzBCBpbzli7zEQWq8RhUmeirg95WXa01mt1KzYUy9X4w1Vtzy5j-KlJcLBHv53FuyVTZMtqXb79cMRRjT5KzxTPTtMxQpZt_ILTGudl4uJ7LV4sbqOZ3DISMx2JaBAYlcRi37pUQRELx3T2oOgGzuA99p0BWNF_swAlHSu_ZjIfPD1MpHBKdCjlOP-OOzr0wt83T5AlKJKjaQ">
+<div class="absolute top-4 left-4 bg-tertiary-container/90 backdrop-blur-sm text-surface-bright px-3 py-1 font-label-caps text-label-caps uppercase tracking-widest">
+            Texture • Formaldehyde-Free
+          </div>
+<div class="absolute bottom-4 right-4 bg-surface-bright text-on-surface px-3 py-1 font-caption text-caption shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 180 mins
+          </div>
+</div>
+<div class="p-space-lg flex flex-col flex-grow justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex justify-between items-baseline gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Japanese Silk Keratin Infusion</h3>
+<span class="font-title-md text-title-md text-secondary whitespace-nowrap">₹15,000+</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Advanced non-toxic restructuring complex delivering frizz immunity, mirror-sheen smoothness, and manageable softness for up to 5 months.
+            </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary">5 Months Durability</span>
+<button class="book-service-btn bg-primary text-on-primary px-space-md py-space-sm font-label-caps text-label-caps uppercase tracking-widest hover:bg-secondary transition-colors" data-service-name="Japanese Silk Keratin Infusion" data-service-price="₹15,000+" type="button">
+              Book Service
+            </button>
+</div>
+</div>
+</article>
+<!-- Item 7: Olaplex Bond Repair -->
+<article class="service-item group flex flex-col bg-surface-container-low transition-all duration-300 hover:bg-surface-container-lowest" data-category="keratin-texture">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Artistic macro close up of healthy restored hair strands with water mist droplets, clean architectural backdrop, warm beige and soft stone tones, high definition macro photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6tkoGQr7gjbr1w9DRUrtn58JytmLl7siQAnv130ViEUVIu7qdHWw9bQC3LCv34u1aPM0tnhP3WLSgSu2ugL9O2oa-gfVMwgDvnnGMEEl_cYc0gN4vwKdwLTDYYO7YRCjei_PHwZSpGnVlbPaevDNHBDxjv7p8HJvOlL-EprUNk0F9sHV6sFKGpGlcyREyMW6vpLyUGb7tEF5nfJF7Qsl0c4ZGswdxw6zeoGBQUK5OIMPZnLCJzEkrMw">
+<div class="absolute top-4 left-4 bg-tertiary-container/90 backdrop-blur-sm text-surface-bright px-3 py-1 font-label-caps text-label-caps uppercase tracking-widest">
+            Treatment • Molecular Repair
+          </div>
+<div class="absolute bottom-4 right-4 bg-surface-bright text-on-surface px-3 py-1 font-caption text-caption shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 75 mins
+          </div>
+</div>
+<div class="p-space-lg flex flex-col flex-grow justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex justify-between items-baseline gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Molecular Bond Reconstruction</h3>
+<span class="font-title-md text-title-md text-secondary whitespace-nowrap">₹6,500</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Medical-grade disulfide bond relinking for compromised, bleached, or heat-fatigued hair. Restores internal tensile elasticity and structural strength.
+            </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Olaplex Stand-Alone</span>
+<button class="book-service-btn bg-primary text-on-primary px-space-md py-space-sm font-label-caps text-label-caps uppercase tracking-widest hover:bg-secondary transition-colors" data-service-name="Molecular Bond Reconstruction" data-service-price="₹6,500" type="button">
+              Book Service
+            </button>
+</div>
+</div>
+</article>
+<!-- Item 8: Scalp Detox Spa -->
+<article class="service-item group flex flex-col bg-surface-container-low transition-all duration-300 hover:bg-surface-container-lowest" data-category="scalp-hair-spa">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Serene spa treatment scene of client receiving a relaxing botanical scalp massage in a dim warm luxury atelier, Japanese wooden headrest and warm water mist infusion" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdxxacWUpLkoqAAPiA1maszDR68R5MZhCbrvpAtYvxolY0dEknwNcrxuTGlVOr4GNIhnkrg8VhnZykwd4nDouOrqm7qRQyEw8dywrvnUQCXeF0p57_qTfTzenpViSBahftc0owrVoJKZQ-jwtEdnbH8TZuMyLKPgcNHeNI443gGER6LWKX0dwn-fwBP8f34Y11fiozkAc1yjPaB7yT3M3XNvJBHPJD35X8nRr_3IV703bnqQdTz5mssQ">
+<div class="absolute top-4 left-4 bg-tertiary-container/90 backdrop-blur-sm text-surface-bright px-3 py-1 font-label-caps text-label-caps uppercase tracking-widest">
+            Spa • Trichological Ritual
+          </div>
+<div class="absolute bottom-4 right-4 bg-surface-bright text-on-surface px-3 py-1 font-caption text-caption shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 90 mins
+          </div>
+</div>
+<div class="p-space-lg flex flex-col flex-grow justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex justify-between items-baseline gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Caviar Scalp Detox Spa</h3>
+<span class="font-title-md text-title-md text-secondary whitespace-nowrap">₹5,200</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Micro-exfoliation, thermal ozone steam cocoon, caviar extract nutritive mask, and acupressure cranial stimulation for follicle rejuvenation.
+            </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Aromatherapeutic</span>
+<button class="book-service-btn bg-primary text-on-primary px-space-md py-space-sm font-label-caps text-label-caps uppercase tracking-widest hover:bg-secondary transition-colors" data-service-name="Caviar Scalp Detox Spa" data-service-price="₹5,200" type="button">
+              Book Service
+            </button>
+</div>
+</div>
+</article>
+<!-- Item 9: Couture Bridal -->
+<article class="service-item group flex flex-col bg-surface-container-low transition-all duration-300 hover:bg-surface-container-lowest" data-category="bridal-event">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="High couture bridal hair styling, intricate modern chignon hair design adorned with subtle pearls and gold hair pins, aristocratic atmosphere, warm ivory background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5BlC8z3uImT8rIRVcd0PVFeCsJ8uauc23-My3p2DAjksSTLFIMEw1S0h9axXi0UnQigYD3EHybHay079SUXAszuAbZmkCueOMUq7drZIeljwaPqFiXtgMUs6a5YvADL0y7-UI8Usci_u-pyE8XBJf8rsqcG2rKbpbJuocp3EvZrqbrdW2-fxEkVEQjXbJHSPtR6u5GwtWl3pAqAYXKvYxjxBHwUOx1E8ab3EQXMrfc-Sj_PjRjBt6jg">
+<div class="absolute top-4 left-4 bg-tertiary-container/90 backdrop-blur-sm text-surface-bright px-3 py-1 font-label-caps text-label-caps uppercase tracking-widest">
+            Bridal • Bespoke Atelier
+          </div>
+<div class="absolute bottom-4 right-4 bg-surface-bright text-on-surface px-3 py-1 font-caption text-caption shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 150 mins
+          </div>
+</div>
+<div class="p-space-lg flex flex-col flex-grow justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex justify-between items-baseline gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Couture Bridal Hair &amp; Trial</h3>
+<span class="font-title-md text-title-md text-secondary whitespace-nowrap">₹22,000</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Includes pre-wedding architecture trial, veil placement choreography, custom jewelry pinning, and day-of VIP suite exclusivity with private artist.
+            </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Includes Trial Run</span>
+<button class="book-service-btn bg-primary text-on-primary px-space-md py-space-sm font-label-caps text-label-caps uppercase tracking-widest hover:bg-secondary transition-colors" data-service-name="Couture Bridal Hair &amp; Trial" data-service-price="₹22,000" type="button">
+              Book Service
+            </button>
+</div>
+</div>
+</article>
+<!-- Item 10: Red Carpet Editorial -->
+<article class="service-item group flex flex-col bg-surface-container-low transition-all duration-300 hover:bg-surface-container-lowest" data-category="bridal-event">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Dramatic high-fashion red carpet hairstyle on a model wearing an avant-garde black collar, sculptural modern hair silhouette, sharp cinematic profile lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6Y1J4VO8BbclgUkTzybGhK9cOZNOY5WuL6GaMbA7ZJABC1G9_HPog3DGM2rxOD9nZtoOciAfF-RbHy-JX8nwE79YOLrCepynbHEXyJL67m8J41EaETMlTLYqVfv6sWUCfZgKS6Te8JRRk78HYvNoJ1b9p__Ea45Wp08HuXJamakOnNi_mXunK9fDNkbp39OqqWXKD30htYOJalqXS-iW72VsawmKGXRnnSg4-baSf6CJtE5Tb6Qip9A">
+<div class="absolute top-4 left-4 bg-tertiary-container/90 backdrop-blur-sm text-surface-bright px-3 py-1 font-label-caps text-label-caps uppercase tracking-widest">
+            Event • Editorial
+          </div>
+<div class="absolute bottom-4 right-4 bg-surface-bright text-on-surface px-3 py-1 font-caption text-caption shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 60 mins
+          </div>
+</div>
+<div class="p-space-lg flex flex-col flex-grow justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex justify-between items-baseline gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Red Carpet Editorial Styling</h3>
+<span class="font-title-md text-title-md text-secondary whitespace-nowrap">₹5,500</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Hollywood waves, modern high-fashion updos, or wet-look glass sculpting crafted for high-definition photography and long-lasting event durability.
+            </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Oribe Dry Texturizing</span>
+<button class="book-service-btn bg-primary text-on-primary px-space-md py-space-sm font-label-caps text-label-caps uppercase tracking-widest hover:bg-secondary transition-colors" data-service-name="Red Carpet Editorial Styling" data-service-price="₹5,500" type="button">
+              Book Service
+            </button>
+</div>
+</div>
+</article>
+<!-- Item 11: Men's Grooming -->
+<article class="service-item group flex flex-col bg-surface-container-low transition-all duration-300 hover:bg-surface-container-lowest" data-category="mens-grooming">
+<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Sophisticated handsome man receiving beard grooming and razor contouring in an ultra-luxurious dark wood and marble atelier, precise masculine grooming editorial" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmh_b1-NY9XD7a7AZt9wKFqVS6HDR5wsD2YbGT_uFV_EXVIYefZOdchi2_3vX78iIUofpfggF8yV-V-guOT9r7-O8zZu6L2CmHuREjXX5X9gfx7sNP9R86hh43gpH279Ev2n-FRk7mxHEWWI7ExPqhVczedsPlTigG0HZuW2g_5meBlEr4nTLgamMZRdJQAyiiuGmVDUmM2LumNVzk7oW-osM6oWEx09zoFoRyB6pugzRONOH2vD-K8A">
+<div class="absolute top-4 left-4 bg-tertiary-container/90 backdrop-blur-sm text-surface-bright px-3 py-1 font-label-caps text-label-caps uppercase tracking-widest">
+            Men • Grooming
+          </div>
+<div class="absolute bottom-4 right-4 bg-surface-bright text-on-surface px-3 py-1 font-caption text-caption shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 60 mins
+          </div>
+</div>
+<div class="p-space-lg flex flex-col flex-grow justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex justify-between items-baseline gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Executive Beard Sculpt &amp; Cut</h3>
+<span class="font-title-md text-title-md text-secondary whitespace-nowrap">₹3,200</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Tapered clipper work, shear balance, hot-towel essential oil steam prep, and precision straight-razor cheek line contouring with soothing balm.
+            </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Hot Towel Ritual</span>
+<button class="book-service-btn bg-primary text-on-primary px-space-md py-space-sm font-label-caps text-label-caps uppercase tracking-widest hover:bg-secondary transition-colors" data-service-name="Executive Beard Sculpt &amp; Cut" data-service-price="₹3,200" type="button">
+              Book Service
+            </button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Bespoke Consultation & Product Care Section -->
+<section class="w-full bg-surface-container py-space-2xl my-space-lg">
+<div class="max-w-[1440px] mx-auto px-margin lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<div class="lg:col-span-5 space-y-space-md">
+<div class="space-y-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">The Atelier Apothecary</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Formulations Without Compromise.</h2>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+            At ZENZA, chemistry is treated with reverence. We strictly house world-renowned restorative systems that honor the biological integrity of every hair fiber.
+          </p>
+<div class="space-y-space-md pt-space-xs">
+<div class="p-space-md bg-surface-container-lowest">
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="material-symbols-outlined text-secondary">eco</span>
+<h4 class="font-title-md text-title-md text-on-surface">Davines Sustainable Science • Parma, Italy</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Biodegradable raw formulas, cold-extracted botanicals, and zero-carbon footprint color pigments created to deliver luminous nuance while preserving natural oils.
+              </p>
+</div>
+<div class="p-space-md bg-surface-container-lowest">
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="material-symbols-outlined text-secondary">diamond</span>
+<h4 class="font-title-md text-title-md text-on-surface">Oribe Haute Parfumerie • Côte d'Azur</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                The apex of bespoke luxury styling. Infused with water-melon extracts, edelweiss stem cells, and signature Côte d’Azur fragrance for supreme tactile elegance.
+              </p>
+</div>
+</div>
+<div class="pt-space-xs">
+<a class="inline-flex items-center gap-space-xs font-label-caps text-label-caps uppercase tracking-widest text-on-surface hover:text-secondary transition-colors" href="#">
+              Schedule Diagnostic Scalp Consultation <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-7 grid grid-cols-2 gap-space-md">
+<div class="space-y-space-md">
+<div class="w-full aspect-[3/4] overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover" data-alt="Minimalist luxury display of Davines and Oribe hair oil glass bottles on warm travertine stone in morning daylight, editorial still life product photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiYhfD2D0mMH_elbLZNGPVBiOGFC_40OB4kCnvFy9H77QvkZeRD1mb6XZPDxFV592FBqYaZE8_guQ--HmXOSSuXubqMzxZt5GSnZbwAvgPBhOCPGN75z6_9sZEc-ZayRLs9CDfmgNVI02p9zZ6zDpA0v2os7X_xjdGhZpfZXlxiym-Gsfs7M4up0oOKfSQPy871PsPV4DqjcDL0oUCQkFZRkr-mrBa3FEAzcyPbyudNju8XhPT_QtYAw">
+</div>
+<div class="p-space-md bg-surface-container-low">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Client Experience</span>
+<p class="font-headline-sm text-headline-sm text-on-surface pt-space-xs">98.4%</p>
+<p class="font-caption text-caption text-on-surface-variant">Reported zero chemical irritation across all color sessions.</p>
+</div>
+</div>
+<div class="space-y-space-md pt-space-xl">
+<div class="p-space-md bg-tertiary-container text-surface-bright">
+<span class="font-label-caps text-label-caps uppercase text-secondary-fixed">Director Philosophy</span>
+<p class="font-body-md text-body-md italic pt-space-xs">"Hair shouldn't just look sublime on the evening of your appointment—it must retain its strength, movement, and health four months later."</p>
+</div>
+<div class="w-full aspect-[3/4] overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover" data-alt="Studio shot of hair treatment preparation in handcrafted ceramic bowl with wooden brush and natural botanicals, muted champagne and warm cream palette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEzyMBrERrwNT8E27etsPzxsRgyTKzd196yM03Bq2jX7k2Vft06jeN_w0KE73nFg7xjZqTbiDBO0lsNMwcCWe299JC0SDOzsO8b-6oqGOY3Uddzs6bovG6XnUbzKxcBoobgys0Xl-2vneVbWyLl82wj4bvHV7zsBIw25yGOlQnsLBqwk54QoFA5u89WuP8m6n1Q_snjTtYft5g5sOhZxXf6WdqMHIH31PdlrizRhLoAxtWWwtYqGjFpA">
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive FAQ Section -->
+<section class="w-full max-w-[1440px] mx-auto px-margin lg:px-margin-desktop py-space-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<div class="lg:col-span-5 space-y-space-sm">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Knowledge • Protocol</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Frequently Asked Questions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Everything you need to know about preparing for your session, personalized consultations, and post-service care.
+        </p>
+<div class="pt-space-md">
+<div class="p-space-md bg-surface-container-low max-w-sm space-y-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Direct Concierge</span>
+<p class="font-body-sm text-body-sm text-on-surface">Have an uncommon requirement or complex color correction?</p>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface underline hover:text-secondary transition-colors inline-block pt-space-xs" href="#">
+              Chat With Salon Desk
+            </a>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 space-y-space-sm" id="faq-accordion">
+<!-- FAQ Item 1 -->
+<div class="faq-item bg-surface-container-low overflow-hidden transition-all duration-200">
+<button class="faq-toggle w-full text-left p-space-md flex items-center justify-between gap-space-md hover:bg-surface-container-high transition-colors" type="button">
+<span class="font-headline-sm text-headline-sm text-on-surface">What does the initial consultation process involve?</span>
+<span class="faq-icon material-symbols-outlined text-secondary transition-transform duration-300">add</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md font-body-md text-body-md text-on-surface-variant">
+            Every session begins with a mandatory 15-minute diagnostic evaluation. We assess your hair's tensile elasticity, natural growth whorls, facial architecture, and lifestyle requirements before any tool touches your hair. For color work, we perform a micro-strand reading.
+          </div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="faq-item bg-surface-container-low overflow-hidden transition-all duration-200">
+<button class="faq-toggle w-full text-left p-space-md flex items-center justify-between gap-space-md hover:bg-surface-container-high transition-colors" type="button">
+<span class="font-headline-sm text-headline-sm text-on-surface">Are patch tests required for first-time color clients?</span>
+<span class="faq-icon material-symbols-outlined text-secondary transition-transform duration-300">add</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md font-body-md text-body-md text-on-surface-variant">
+            Yes. Client safety is non-negotiable. For all first-time colorants, we require a 48-hour dermal allergy patch test at our Mumbai or Delhi ateliers. If you are traveling from out of town, we coordinate a complimentary mail-safe test kit ahead of your date.
+          </div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="faq-item bg-surface-container-low overflow-hidden transition-all duration-200">
+<button class="faq-toggle w-full text-left p-space-md flex items-center justify-between gap-space-md hover:bg-surface-container-high transition-colors" type="button">
+<span class="font-headline-sm text-headline-sm text-on-surface">How do I maintain my balayage or treatment after leaving?</span>
+<span class="faq-icon material-symbols-outlined text-secondary transition-transform duration-300">add</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md font-body-md text-body-md text-on-surface-variant">
+            Your master stylist prescribes a bespoke home maintenance ritual with Davines sulfate-free cleansers and Oribe ultraviolet filters. We also recommend an in-studio express gloss refresh at week 8 to preserve pigment vibrancy.
+          </div>
+</div>
+<!-- FAQ Item 4 -->
+<div class="faq-item bg-surface-container-low overflow-hidden transition-all duration-200">
+<button class="faq-toggle w-full text-left p-space-md flex items-center justify-between gap-space-md hover:bg-surface-container-high transition-colors" type="button">
+<span class="font-headline-sm text-headline-sm text-on-surface">What is ZENZA’s cancellation and rescheduling policy?</span>
+<span class="faq-icon material-symbols-outlined text-secondary transition-transform duration-300">add</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md font-body-md text-body-md text-on-surface-variant">
+            We operate on dedicated private appointments. We request a minimum of 24 hours notice for standard haircuts and 48 hours notice for multi-hour color or bridal rituals. Cancellations inside this window forfeit the initial 20% booking retainer.
+          </div>
+</div>
+<!-- FAQ Item 5 -->
+<div class="faq-item bg-surface-container-low overflow-hidden transition-all duration-200">
+<button class="faq-toggle w-full text-left p-space-md flex items-center justify-between gap-space-md hover:bg-surface-container-high transition-colors" type="button">
+<span class="font-headline-sm text-headline-sm text-on-surface">Can I request private suite styling for high-profile events?</span>
+<span class="faq-icon material-symbols-outlined text-secondary transition-transform duration-300">add</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md font-body-md text-body-md text-on-surface-variant">
+            Yes. Both our Altamount Road (Mumbai) and Friends Colony West (Delhi) studios feature sequestered VIP Atelier suites with dedicated private wash lounges, discreet elevator access, and tailored hospitality menus.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Booking Anchor Banner -->
+<section class="w-full bg-tertiary text-on-tertiary py-space-2xl">
+<div class="max-w-[1440px] mx-auto px-margin lg:px-margin-desktop">
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-gutter-desktop">
+<div class="max-w-2xl space-y-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Reservations Now Open</span>
+<h2 class="font-display-lg text-display-lg text-surface-bright tracking-tight">Claim Your Chair at the Atelier.</h2>
+<p class="font-body-lg text-body-lg text-tertiary-fixed-dim">
+            Slots with Atelier Directors are released 30 days in advance. Secure your preferred artist and experience hairdressing redefined.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md w-full lg:w-auto">
+<a class="bg-secondary-fixed text-on-secondary-fixed text-center px-space-xl py-space-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-bright transition-colors shadow-md" href="#">
+            Book Appointment Now
+          </a>
+<a class="border border-tertiary-fixed-dim/30 text-surface-bright text-center px-space-lg py-space-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-container-lowest/10 transition-colors" href="#">
+            WhatsApp Concierge
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Selection Modal (Micro-interaction for service booking) -->
+<div class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-end md:items-center justify-center p-0 md:p-space-lg" id="booking-drawer">
+<div class="bg-surface text-on-surface w-full max-w-lg p-space-xl space-y-space-md shadow-2xl relative">
+<button class="absolute top-4 right-4 text-on-surface-variant hover:text-on-surface p-2" id="close-drawer-btn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<div class="space-y-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Confirm Selection</span>
+<h3 class="font-headline-md text-headline-md text-on-surface" id="drawer-service-name">Service Title</h3>
+<p class="font-title-md text-title-md text-secondary" id="drawer-service-price">₹0</p>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Proceed to choose your preferred atelier location, stylist tier, and preferred timing slot.
+      </p>
+<div class="space-y-space-sm pt-space-xs">
+<div class="flex gap-space-sm">
+<button class="w-1/2 py-space-sm bg-surface-container font-label-caps text-label-caps uppercase text-on-surface hover:bg-surface-variant" type="button">Mumbai Atelier</button>
+<button class="w-1/2 py-space-sm bg-surface-container font-label-caps text-label-caps uppercase text-on-surface hover:bg-surface-variant" type="button">Delhi Atelier</button>
+</div>
+<button class="w-full bg-primary text-on-primary py-space-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-secondary transition-colors" type="button">
+          Continue To Calendar
+        </button>
+</div>
+</div>
+</div>
+<!-- Inline Micro-interactions Script -->
+<script>
+    (function() {
+      // 1. Category Filtering
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const serviceItems = document.querySelectorAll('.service-item');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filter = btn.getAttribute('data-filter');
+          
+          // Toggle active classes
+          filterButtons.forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary');
+            b.classList.add('bg-surface-container', 'text-on-surface');
+          });
+          btn.classList.add('bg-primary', 'text-on-primary');
+          btn.classList.remove('bg-surface-container', 'text-on-surface');
+
+          // Filter articles
+          serviceItems.forEach(item => {
+            const cat = item.getAttribute('data-category');
+            if (filter === 'all' || cat === filter) {
+              item.style.display = 'flex';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // 2. Accordion functionality
+      const faqToggles = document.querySelectorAll('.faq-toggle');
+      faqToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+          const content = toggle.nextElementSibling;
+          const icon = toggle.querySelector('.faq-icon');
+          const isExpanded = !content.classList.contains('hidden');
+
+          // Close all
+          document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+          document.querySelectorAll('.faq-icon').forEach(i => i.textContent = 'add');
+
+          if (!isExpanded) {
+            content.classList.remove('hidden');
+            icon.textContent = 'remove';
+          }
+        });
+      });
+
+      // 3. Quick Booking Drawer Modal
+      const bookButtons = document.querySelectorAll('.book-service-btn');
+      const drawer = document.getElementById('booking-drawer');
+      const drawerClose = document.getElementById('close-drawer-btn');
+      const drawerTitle = document.getElementById('drawer-service-name');
+      const drawerPrice = document.getElementById('drawer-service-price');
+
+      bookButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const name = btn.getAttribute('data-service-name');
+          const price = btn.getAttribute('data-service-price');
+          drawerTitle.textContent = name;
+          drawerPrice.textContent = price;
+          drawer.classList.remove('hidden');
+          drawer.classList.add('flex');
+        });
+      });
+
+      if (drawerClose && drawer) {
+        drawerClose.addEventListener('click', () => {
+          drawer.classList.add('hidden');
+          drawer.classList.remove('flex');
+        });
+
+        drawer.addEventListener('click', (e) => {
+          if (e.target === drawer) {
+            drawer.classList.add('hidden');
+            drawer.classList.remove('flex');
+          }
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-tertiary-container text-surface-bright pt-space-2xl pb-space-xl"><div class="max-w-[1440px] mx-auto px-margin lg:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-desktop pb-space-2xl"><div class="lg:col-span-4 flex flex-col justify-between space-y-space-md"><div class="space-y-space-xs"><p class="font-headline-md text-headline-md tracking-wider text-surface-bright uppercase">ZENZA</p><p class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Hair Studio</p></div><p class="font-body-lg text-body-lg italic text-tertiary-fixed-dim pr-space-lg">Where Artistry Meets Individuality.</p><div class="pt-space-sm"><p class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed mb-space-xs">Exclusive Dispatches</p><div class="flex items-center bg-surface-container-lowest/5 p-space-xs max-w-sm"><input class="bg-transparent font-body-sm text-body-sm text-surface-bright placeholder:text-outline-variant px-space-sm py-space-xs focus:outline-none flex-grow" placeholder="Enter your email address" type="email"><button class="bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps uppercase tracking-widest px-space-md py-space-xs hover:bg-surface-bright transition-colors" type="button">Join</button></div></div></div><div class="lg:col-span-3 space-y-space-md"><p class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Studio Hours</p><div class="space-y-space-xs font-body-sm text-body-sm text-tertiary-fixed-dim"><div class="flex justify-between py-space-xs"><span>Monday – Saturday</span><span class="text-surface-bright">10:00 AM – 9:00 PM</span></div><div class="flex justify-between py-space-xs"><span>Sunday</span><span class="text-surface-bright">11:00 AM – 7:00 PM</span></div><p class="font-caption text-caption text-outline-variant pt-space-xs">Private atelier reservations available upon consultation.</p></div></div><div class="lg:col-span-3 space-y-space-md"><p class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Ateliers</p><div class="space-y-space-md font-body-sm text-body-sm text-tertiary-fixed-dim"><div class="space-y-space-xs"><p class="font-title-md text-title-md text-surface-bright">Mumbai Atelier</p><p>42 Altamount Road, Cumballa Hill</p><p>Mumbai, Maharashtra 400026</p><p class="text-surface-bright pt-space-xs">+91 22 2380 4411</p></div><div class="space-y-space-xs"><p class="font-title-md text-title-md text-surface-bright">Delhi Atelier</p><p>The Manor, 77 Friends Colony West</p><p>New Delhi, Delhi 110065</p><p class="text-surface-bright pt-space-xs">+91 11 4105 8820</p></div></div></div><div class="lg:col-span-2 space-y-space-md"><p class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Connect</p><div class="flex flex-col space-y-space-sm font-label-caps text-label-caps uppercase tracking-widest text-tertiary-fixed-dim"><a class="hover:text-surface-bright transition-colors flex items-center gap-space-xs" href="#"><span class="material-symbols-outlined text-[16px]">chat</span>WhatsApp Concierge</a><a class="hover:text-surface-bright transition-colors flex items-center gap-space-xs" href="#"><span class="material-symbols-outlined text-[16px]">photo_camera</span>Instagram Journal</a><a class="hover:text-surface-bright transition-colors flex items-center gap-space-xs" href="#"><span class="material-symbols-outlined text-[16px]">mail</span>atelier@zenzastudio.com</a></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between font-caption text-caption text-outline-variant gap-space-md"><p>© 2025 ZENZA Hair Studio Private Limited. All privileges reserved.</p><div class="flex items-center gap-space-lg font-label-caps text-label-caps uppercase tracking-widest"><a class="hover:text-surface-bright transition-colors" href="#">Privacy Policy</a><a class="hover:text-surface-bright transition-colors" href="#">Terms of Service</a><a class="hover:text-surface-bright transition-colors" href="#">Salon Etiquette</a></div></div></div></footer></body></html>

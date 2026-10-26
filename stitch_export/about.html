@@ -1,0 +1,556 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-container": "#1c1b1b", "on-tertiary": "#ffffff", "surface-bright": "#fff8f3", "on-surface-variant": "#444748", "on-tertiary-fixed-variant": "#4c4641", "secondary-fixed": "#fcdeb4", "primary-fixed": "#e5e2e1", "on-error": "#ffffff", "tertiary-fixed-dim": "#cfc5be", "on-primary-fixed": "#1c1b1b", "tertiary": "#000000", "error-container": "#ffdad6", "primary-fixed-dim": "#c8c6c5", "background": "#fff8f3", "secondary-container": "#f9dbb1", "surface": "#fff8f3", "on-secondary-fixed-variant": "#574424", "outline-variant": "#c4c7c7", "on-surface": "#1f1b17", "on-tertiary-fixed": "#1f1b17", "surface-variant": "#eae1da", "on-tertiary-container": "#8a827d", "on-background": "#1f1b17", "secondary-fixed-dim": "#dfc29a", "surface-tint": "#5f5e5e", "error": "#ba1a1a", "tertiary-container": "#1f1b17", "inverse-surface": "#34302b", "secondary": "#705b3a", "inverse-primary": "#c8c6c5", "inverse-on-surface": "#f8efe8", "on-primary": "#ffffff", "on-secondary-fixed": "#271901", "on-primary-fixed-variant": "#474746", "primary": "#000000", "on-secondary-container": "#755f3e", "on-error-container": "#93000a", "outline": "#747878", "on-primary-container": "#858383", "surface-container-lowest": "#ffffff", "surface-dim": "#e1d9d1", "surface-container-high": "#efe7df", "surface-container-low": "#fbf2ea", "tertiary-fixed": "#ebe0da", "on-secondary": "#ffffff", "surface-container": "#f5ece5", "surface-container-highest": "#eae1da" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "margin-desktop": "5rem", "space-md": "1rem", "space-xs": "0.25rem", "margin-tablet": "3rem", "space-xl": "3rem", "space-2xl": "5rem", "gutter-desktop": "2.5rem", "gutter": "1.5rem", "space-lg": "1.75rem", "margin": "1.5rem" }, "fontFamily": { "headline-md": ["Playfair Display"], "display-lg-mobile": ["Playfair Display"], "display-xl-mobile": ["Playfair Display"], "caption": ["Manrope"], "title-md": ["Manrope"], "body-md": ["Manrope"], "headline-lg": ["Playfair Display"], "headline-sm": ["Playfair Display"], "display-lg": ["Playfair Display"], "label-caps": ["Manrope"], "body-sm": ["Manrope"], "display-xl": ["Playfair Display"], "body-lg": ["Manrope"], "headline-lg-mobile": ["Playfair Display"] }, "fontSize": { "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "400" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "display-xl-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "caption": ["12px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "300" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "500" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], "display-xl": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "300" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-margin lg:px-margin-desktop flex items-center justify-between"><a href="index.html" class="flex items-center gap-space-md"><span class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-wider font-normal">ZENZA</span><span class="hidden sm:inline-block font-label-caps text-label-caps uppercase text-secondary tracking-widest pl-space-xs">HAIR STUDIO</span></a><nav class="hidden lg:flex items-center gap-gutter-desktop" data-active-classes="text-on-surface font-semibold"><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="home" href="index.html">Home</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="services" href="services.html">Services</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="gallery" href="gallery.html">Gallery</a><a aria-current="page" class="uppercase transition-colors tracking-widest text-on-surface font-semibold" data-path="about-us" href="about.html">About Us</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="stylists" href="about.html#stylists">Stylists</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="contact" href="contact.html">Contact</a></nav><div class="flex items-center gap-space-md"><a class="bg-secondary text-on-secondary px-space-md py-space-sm font-label-caps text-label-caps uppercase tracking-widest hover:bg-on-surface transition-colors shadow-sm" data-path="booking" href="booking.html">Book Appointment</a><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1Ws-VfcQHvzwgnASt0BceRTtq33K09FtBFabXV8mPKO3lZ_vfHH0_Wu0uaWoeAAn0osTY6ALwXb-RWWXdeuFnAxL7l3UVxjg7r9JnkZqGtMHp6rMmC1Usiii9pi93hKolPwcOonwmfBLX-al0b4OOwSBgAVevT-Wfs6rF51jMsS1-jIx2ctbkbku70-VPUqqmuGA8kwdiqv_G-GJbF_XMhpg4dCTjyEBzwY8KwH_3KbU98jNoKSQnsRcYCK"></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<!-- 1. Editorial Photographic Hero (Immersive & Bleeding Under Shell Header) -->
+<section class="relative w-full -mt-20 overflow-hidden bg-tertiary-container text-surface-bright">
+<div class="absolute inset-0 bg-cover bg-center opacity-40 scale-105 transition-transform duration-1000 ease-out" data-alt="Editorial cinematic wide shot of luxury hair atelier interior with master stylists working in warm diffused natural morning daylight. Minimalist wabi-sabi concrete and polished travertine architecture, brushed champagne brass accents, sheer linen floor-to-ceiling drapes filtering sunbeams, subtle motion blur of a stylist holding Japanese shears, tranquil quiet luxury atmosphere in beige, ivory, and deep charcoal tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDb8M-LD-yhK18tfPQgboUL-pgmv8RrU9T6cQmbrMw_Jh1i3OW3DGYxPn2vy8NiNBmF1XEQedzwbkNFcCLo93yidVDsv_VjqzSbgtmnfpAWqm0dIWAJgw32J4rMVM_QdSSemAPeKCrqHpHbTspXacyvK0kL_RrP4LhdAeYsZad_FitBr5n2X9UMaUSGijP1Eafv5Hipbbp7pfQZgf7QJwT6hbczNE1wUvPRNjMuPbPhLe5qQ2enqBdy-Q')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-tertiary-container via-tertiary-container/50 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-tertiary-container/80 via-transparent to-tertiary-container/40"></div>
+<div class="relative z-10 max-w-[1440px] mx-auto px-margin lg:px-margin-desktop pt-40 pb-space-2xl flex flex-col justify-end min-h-[85vh]">
+<div class="max-w-4xl space-y-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="inline-block w-8 h-[1px] bg-secondary-fixed"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Atelier Monograph • Founded 2011</span>
+</div>
+<h1 class="font-display-xl text-display-xl tracking-tight text-surface-bright uppercase leading-[1.08]">
+          POETRY IN MOTION.<br>
+<span class="italic font-normal text-secondary-fixed">MASTERY IN FORM.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-surface-dim font-light max-w-2xl leading-relaxed pt-space-xs">
+          Founded on the belief that hair design is an intimate art form—a dialogue between architectural structure, organic movement, and individual identity.
+        </p>
+<div class="pt-space-lg flex flex-wrap items-center gap-space-md">
+<a class="bg-surface-bright text-tertiary-container font-label-caps text-label-caps uppercase tracking-widest px-space-lg py-space-md shadow-sm hover:bg-secondary-fixed transition-colors inline-flex items-center gap-space-xs" href="#narrative">
+<span>Discover The Heritage</span>
+<span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+</a>
+<a class="bg-surface-container-lowest/10 backdrop-blur-sm text-surface-bright font-label-caps text-label-caps uppercase tracking-widest px-space-lg py-space-md hover:bg-surface-container-lowest/20 transition-colors" href="#ateliers">
+            Explore Flagship Sanctuaries
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Studio Philosophy & Origin + Counter Metrics -->
+<section class="w-full bg-surface py-space-2xl" id="narrative">
+<div class="max-w-[1440px] mx-auto px-margin lg:px-margin-desktop">
+<!-- Section Tag -->
+<div class="flex items-center justify-between pb-space-lg">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">01 / Origin &amp; Philosophy</span>
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Milan • London • Mumbai</span>
+</div>
+<!-- Editorial Narrative Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<div class="lg:col-span-5 space-y-space-md">
+<h2 class="font-headline-lg text-headline-lg text-on-surface leading-tight">
+            Rejecting the factory salon. Returning to the sacred atelier.
+          </h2>
+<div class="w-16 h-[2px] bg-secondary"></div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            In an era dominated by hyper-speed turnarounds, assembly-line blowouts, and algorithmic trends, ZENZA was founded as a quiet act of rebellion. We view styling not as mechanical maintenance, but as an architectural discipline shaped by human kinetics and bone structure.
+          </p>
+<div class="p-space-md bg-surface-container-low">
+<p class="font-headline-sm text-headline-sm italic text-secondary">
+              “True elegance is never hurried. It lives in the millimeters between restraint and sculpture.”
+            </p>
+<p class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface mt-space-sm">— Elena Vance, Creative Director &amp; Co-Founder</p>
+</div>
+</div>
+<div class="lg:col-span-7 space-y-space-md lg:pl-space-md">
+<div class="relative overflow-hidden aspect-[16/10] bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="Monochrome cinematic black and white detail photo of hair shears and fine Japanese steel cutting comb resting on raw travertine marble with soft shadow cast by dried botanical branch, luxurious calm editorial lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcOGxT-hHw-Gfv8tVjYCtJzVV4oDpRL_Heron9JiL6Sm4dxY6rGLnIJACVq68fLBZyveUBQhu-YsrRIc5PnR3J5PLZg1E5D-dmxJVpcf7Jm3iYdxirqKkTHvisDOZYR2sP4PGvxsQqnjiEBSCG1Yz9XkhgJeTOTVguJyNbjbpO8td2tLgukruOQ1c0McdsU7XE2ImnLoRenMEESjsz3REvL1lOlwAExjVo9J5z_85d-xJy4ITA-H2D-A">
+<div class="absolute bottom-4 left-4 bg-tertiary-container/90 backdrop-blur-md px-space-md py-space-xs text-surface-bright">
+<span class="font-label-caps text-label-caps uppercase tracking-widest">Handcrafted Japanese Hitachi Shears • Custom Balanced</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<p>
+              Cut and refined across seven seasons backstage at Milan and London Fashion Weeks, our founders observed a persistent contradiction: backstage craftsmanship yielded immaculate, breathing hair, yet commercial salons routinely subjected clients to synthetic toxicity and rushed 30-minute appointments.
+            </p>
+<p>
+              ZENZA was built to eradicate that compromise. Each client receives a dedicated single-chair sanctuary, holistic cranial analysis, unhurried thermal treatments, and artisanal biodynamic formulations sourced directly from green chemistry laboratories in Bologna and Kyoto.
+            </p>
+</div>
+</div>
+</div>
+<!-- Numerical Metrics Bar (Bento-style Minimalist Counters) -->
+<div class="mt-space-2xl grid grid-cols-2 lg:grid-cols-4 gap-gutter bg-surface-container-low p-space-lg lg:p-space-xl">
+<div class="space-y-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-lg text-display-lg text-on-surface font-light" data-counter="14">1</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-serif">Yrs</span>
+</div>
+<p class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface">Years of Craft</p>
+<p class="font-caption text-caption text-on-surface-variant">Founded in 2011 with an unwavering standard of excellence.</p>
+</div>
+<div class="space-y-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-lg text-display-lg text-on-surface font-light" data-counter="18">1</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-serif">Mstr</span>
+</div>
+<p class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface">Master Stylists</p>
+<p class="font-caption text-caption text-on-surface-variant">Vidal Sassoon and Toni&amp;Guy academy accredited artists.</p>
+</div>
+<div class="space-y-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-lg text-display-lg text-on-surface font-light" data-counter="40">2k</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-serif">+</span>
+</div>
+<p class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface">Tailored Transformations</p>
+<p class="font-caption text-caption text-on-surface-variant">Bespoke cuts, balances, and couture formulations delivered.</p>
+</div>
+<div class="space-y-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-lg text-display-lg text-on-surface font-light">100</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-serif">%</span>
+</div>
+<p class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface">Cruelty-Free Botanicals</p>
+<p class="font-caption text-caption text-on-surface-variant">Sustainably bottled clean chemistry with zero ammonia.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Core Pillars & Principles (4 Refined Editorial Cards) -->
+<section class="w-full bg-surface-container py-space-2xl">
+<div class="max-w-[1440px] mx-auto px-margin lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between pb-space-xl gap-space-md">
+<div class="space-y-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">02 / Guiding Tenets</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase">The Pillars of The Atelier</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+          Every gesture, from dry-cutting tension to the cadence of the basin scalp massage, is governed by four immutable principles.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Pillar 1 -->
+<div class="bg-surface p-space-lg flex flex-col justify-between h-full group hover:shadow-lg transition-all duration-300">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Principle 01</span>
+<span class="material-symbols-outlined text-secondary">architecture</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Anatomical Precision</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              We cut to bone structure, jaw contour, and growth vortices. Hair should fall organically into its perfect silhouette without requiring forty minutes of daily thermal manipulation.
+            </p>
+</div>
+<div class="pt-space-lg mt-space-md">
+<span class="font-caption text-caption uppercase tracking-wider text-secondary flex items-center gap-space-xs">
+              Geometric Balance <span class="material-symbols-outlined text-[14px]">north_east</span>
+</span>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface p-space-lg flex flex-col justify-between h-full group hover:shadow-lg transition-all duration-300">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Principle 02</span>
+<span class="material-symbols-outlined text-secondary">eco</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Non-Toxic Chemistry</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Biodynamic botanicals, vegan keratin infusions, and ammonia-free micro-pigments. We preserve follicle integrity and clean atmospheric air quality without compromising luminous vibrancy.
+            </p>
+</div>
+<div class="pt-space-lg mt-space-md">
+<span class="font-caption text-caption uppercase tracking-wider text-secondary flex items-center gap-space-xs">
+              Clean Formulations <span class="material-symbols-outlined text-[14px]">north_east</span>
+</span>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface p-space-lg flex flex-col justify-between h-full group hover:shadow-lg transition-all duration-300">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Principle 03</span>
+<span class="material-symbols-outlined text-secondary">spa</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">The Quiet Sanctuary</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              No blasting pop playlists, no fluorescent ring lights, no rushed cross-talk. Our studios are calibrated acoustic cocoons featuring low-decibel Italian dryers and cedarwood aromatics.
+            </p>
+</div>
+<div class="pt-space-lg mt-space-md">
+<span class="font-caption text-caption uppercase tracking-wider text-secondary flex items-center gap-space-xs">
+              Acoustic Calm <span class="material-symbols-outlined text-[14px]">north_east</span>
+</span>
+</div>
+</div>
+<!-- Pillar 4 -->
+<div class="bg-surface p-space-lg flex flex-col justify-between h-full group hover:shadow-lg transition-all duration-300">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Principle 04</span>
+<span class="material-symbols-outlined text-secondary">forum</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Unhurried Dialogue</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Every first visit commences with an unhurried 20-minute tea ritual and diagnostic dialogue before shears ever touch dry strand. We listen to lifestyle, habits, and unspoken preferences.
+            </p>
+</div>
+<div class="pt-space-lg mt-space-md">
+<span class="font-caption text-caption uppercase tracking-wider text-secondary flex items-center gap-space-xs">
+              Holistic Diagnostics <span class="material-symbols-outlined text-[14px]">north_east</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. The Master Team & Stylists (Editorial Roster) -->
+<section class="w-full bg-surface py-space-2xl">
+<div class="max-w-[1440px] mx-auto px-margin lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between pb-space-xl gap-space-md">
+<div class="space-y-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">03 / Artistry Roster</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase">The Master Stylists</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+          Educated across the premier academies of London, Paris, and Tokyo. Each artisan brings a dedicated sub-specialty and singular creative vision.
+        </p>
+</div>
+<!-- Stylist Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-desktop">
+<!-- 1: Elena Vance -->
+<div class="flex flex-col bg-surface-container-low group overflow-hidden">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Editorial fashion portrait of Elena Vance, creative director hair stylist with chic architectural blunt bob hairstyle, soft beige linen jacket, natural calm expression, minimalist studio lighting with gentle shadow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZahnBALtSejiXPbF_E5eWOvSEYuRPDkfR2TW7FNeFjdo76kWb7uBXRBnZlR7vH_xLYyMloQr7Hwlfix_jq-DIZmbiDKQ9mOlDkpS1p30FJeOBexMg-D21TwvJ9tluXR_LOjvcrZEySlzkL4BnWztyrlr-O7jfREj8Ft-Iq53uWfOYhVV-bb6-oBjfrVYsHaBH39FPQYLz7onq2Qr0h4DUty7i9xFN15eOtPLOFneVEg_cLDCZRzvlAQ">
+<div class="absolute top-4 left-4 bg-tertiary-container/90 text-secondary-fixed font-label-caps text-label-caps uppercase tracking-widest px-space-sm py-space-xs">
+              Founder • Creative Director
+            </div>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-grow space-y-space-md">
+<div class="space-y-space-xs">
+<div class="flex justify-between items-baseline">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Elena Vance</h3>
+<span class="font-caption text-caption text-secondary font-medium">18 Yrs Experience</span>
+</div>
+<p class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">Architectural Dry Cut • Runway Sculpting</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs leading-relaxed">
+                Trained at Sassoon London, former runway lead for Giorgio Armani and Jil Sander. Pioneered the signature ZENZA Tension Balance dry technique.
+              </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant italic">“British Hair Awards Finalist 2022”</span>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface hover:text-secondary flex items-center gap-space-xs transition-colors" href="#">
+                Reserve Session <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- 2: Marcus Sterling -->
+<div class="flex flex-col bg-surface-container-low group overflow-hidden">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Editorial portrait of Marcus Sterling, head hair colorist with subtle textured dark hair, wearing minimal black turtleneck, warm ambient studio lighting, soft diffused highlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUdrueDkuApvcVe2kY_1oMaR0gvzaxwaYRp92SC54h3BOvoQiBc5uxmnhjMqgoPvSq2kZ97N2bh1h2gNLct-0OtGdUeGEQpV44ejJer-ifVn6omg6APyVJVrenctF5x2Uc8F1JvasBCDffhhPSIwX0fhlLqhhVAd7UHBg6NknjooaEoDM3LWu8_PRL56Tqk0vuVZP9Nsd5DiUED6pVRUUiAf7SEWmqJGlwb0dS01O4uyYKl96cOswM_A">
+<div class="absolute top-4 left-4 bg-tertiary-container/90 text-secondary-fixed font-label-caps text-label-caps uppercase tracking-widest px-space-sm py-space-xs">
+              Head Colorist
+            </div>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-grow space-y-space-md">
+<div class="space-y-space-xs">
+<div class="flex justify-between items-baseline">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Marcus Sterling</h3>
+<span class="font-caption text-caption text-secondary font-medium">14 Yrs Experience</span>
+</div>
+<p class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">Freehand Balayage • Micro-Pigment Chemistry</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs leading-relaxed">
+                Master of soft dimensional luminescence. Celebrated for seamless lived-in blondes, smoky brunettes, and low-contrast grey transitioning.
+              </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant italic">“Vogue Color Innovator Recognition”</span>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface hover:text-secondary flex items-center gap-space-xs transition-colors" href="#">
+                Reserve Session <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- 3: Kenneth Thorne -->
+<div class="flex flex-col bg-surface-container-low group overflow-hidden">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Sophisticated portrait of Kenneth Thorne, male master groomer with neatly styled silver hair and beard, wearing bespoke charcoal apron over neutral shirt, artisanal craftsmanship lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAM37uBYiTySCm4RMP2ntlUrSaFnICnx1kW352dEKz2ho2_H0YE8nHAyO2-RiJvuin2iCkmmi6lUVrABEPRIC-u_0avIdaJtVIe4zUhvuU_vGjUrKhEb40vvCOUgGGCF9ayuaPsIoHl9eearmu5LSx6cr7NeLJk__Ky4vtPXq4yeIJYvmAraZmlu4BMhcAO1Lzsgf2kBxMd84OPaI7epI1w7V_pbK4t11RtTZdPnDkuQhs65XJdRyIAHg">
+<div class="absolute top-4 left-4 bg-tertiary-container/90 text-secondary-fixed font-label-caps text-label-caps uppercase tracking-widest px-space-sm py-space-xs">
+              Master Groomer
+            </div>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-grow space-y-space-md">
+<div class="space-y-space-xs">
+<div class="flex justify-between items-baseline">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Kenneth Thorne</h3>
+<span class="font-caption text-caption text-secondary font-medium">16 Yrs Experience</span>
+</div>
+<p class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">Traditional Barbering • Hot Towel Rituals</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs leading-relaxed">
+                Former resident master at Mayfair's historic gentlemen ateliers. Blends classic razor tapers with avant-garde scissor over comb contours.
+              </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant italic">“Guild of British Master Barbers”</span>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface hover:text-secondary flex items-center gap-space-xs transition-colors" href="#">
+                Reserve Session <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- 4: Ananya Patel -->
+<div class="flex flex-col bg-surface-container-low group overflow-hidden">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Graceful studio portrait of Ananya Patel, bridal and couture hair stylist with elegant hair bun, wearing neutral beige silk blouse, soft warm key light, quiet luxury editorial mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaTKJQI4wPmHc1BTKUV5VSbtvsyZVuo-wMmDuBIGd5RFddbP2KlR7vHd0UbwzJ8M0g9xsR9I8dYcFV4AXPU88K35brK3TxVpV7_E8-0T3FJt-bpxTEKuZKYpzaJsd1yYJGhJzbQc5vetjsGZyws5QrBKR2eNpVmyS8vZjRvRxoFttgx0lpvhsnk7EjxVUzzb4mAPxXRltHmf7lA7xU8SH8Bu_EcZNZbATpxz9Q-7wmWXnL15hzLYJw-g">
+<div class="absolute top-4 left-4 bg-tertiary-container/90 text-secondary-fixed font-label-caps text-label-caps uppercase tracking-widest px-space-sm py-space-xs">
+              Bridal &amp; Couture Updo Lead
+            </div>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-grow space-y-space-md">
+<div class="space-y-space-xs">
+<div class="flex justify-between items-baseline">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Ananya Patel</h3>
+<span class="font-caption text-caption text-secondary font-medium">12 Yrs Experience</span>
+</div>
+<p class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">Couture Chignons • Regal Heritage Styling</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs leading-relaxed">
+                Specialist in architectural bridal updos that withstand humidity and movement while maintaining weightless, cloud-like softness.
+              </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant italic">“Harper's Bazaar Bridal Key Artist”</span>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface hover:text-secondary flex items-center gap-space-xs transition-colors" href="#">
+                Reserve Session <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- 5: Maya Sen -->
+<div class="flex flex-col bg-surface-container-low group overflow-hidden">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Editorial portrait of Maya Sen, texture specialist stylist with curly voluminous hair styled naturally, wearing minimalist olive linen shirt, artistic soft directional natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeR-M-5nVGageYZyFNPCVu9FNFn8ZZdiOtkpjfRSUdvn1coc80Y0v5Pe8IFuT11QX4_pmoYs5zMI6QVxHB1lNFTr_yFvFKA78XP9rndt7GQH4dm1ulNknCCR-2CRo4UPylrS9U6TV99wBT0PQZL7_l4dCPY0gWSsGEUw_RZZkiftOQBmdmi8JTl_R-V_tH7nI9MtyvrB1YjpVnKcizLJl82JmMnYlI0t3KvbgIWGWaHHaT6sdmS02oWQ">
+<div class="absolute top-4 left-4 bg-tertiary-container/90 text-secondary-fixed font-label-caps text-label-caps uppercase tracking-widest px-space-sm py-space-xs">
+              Texture &amp; Curl Specialist
+            </div>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-grow space-y-space-md">
+<div class="space-y-space-xs">
+<div class="flex justify-between items-baseline">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Maya Sen</h3>
+<span class="font-caption text-caption text-secondary font-medium">10 Yrs Experience</span>
+</div>
+<p class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">Curl Hydration • Japanese Botanical Smoothing</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs leading-relaxed">
+                Champion of organic wave pattern enhancement and non-damaging smoothing therapies that restore natural curl elasticity.
+              </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant italic">“World Texture Congress Speaker 2024”</span>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface hover:text-secondary flex items-center gap-space-xs transition-colors" href="#">
+                Reserve Session <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- 6: Bespoke Consultation Card -->
+<div class="flex flex-col bg-tertiary-container text-surface-bright p-space-xl justify-between">
+<div class="space-y-space-md">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Private Atelier Curation</span>
+<h3 class="font-headline-md text-headline-md text-surface-bright">Looking for a tailored stylist match?</h3>
+<p class="font-body-sm text-body-sm text-tertiary-fixed-dim leading-relaxed">
+              Our salon concierge assesses your texture profile, aesthetic aspirations, and preferred schedule to pair you with the ideal master artisan.
+            </p>
+</div>
+<div class="pt-space-xl space-y-space-md">
+<div class="flex items-center gap-space-sm text-secondary-fixed">
+<span class="material-symbols-outlined">verified</span>
+<span class="font-caption text-caption tracking-wider uppercase">Zero Obligation Diagnostic</span>
+</div>
+<a class="block text-center w-full bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps uppercase tracking-widest py-space-md hover:bg-surface-bright transition-colors shadow-sm" href="#">
+              Connect With Concierge
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Atelier Spaces (Architectural Showcase) -->
+<section class="w-full bg-surface-container-high py-space-2xl" id="ateliers">
+<div class="max-w-[1440px] mx-auto px-margin lg:px-margin-desktop">
+<div class="max-w-2xl space-y-space-xs pb-space-xl">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">04 / Spatial Architecture</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase">The Flagship Sanctuaries</h2>
+<p class="font-body-md text-body-md text-on-surface-variant pt-space-xs">
+          Engineered alongside renowned acoustic architects and biophilic designers to quiet the nervous system the moment you cross the threshold.
+        </p>
+</div>
+<!-- Atelier Bento Mosaic -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Feature 1: The Shiatsu Sensory Washrooms -->
+<div class="lg:col-span-8 bg-surface overflow-hidden group">
+<div class="relative aspect-[16/9] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Architectural photograph of a luxury hair salon shampoo wash basin suite with reclining Italian black leather Shiatsu massage chairs, dim indirect warm backlighting, dark fluted wood wall panels, minimalist zen luxury aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPuA3URQZJJXDZJQ-vXr14cj1UcI5nYERLWJbZV0FnK30PSnk3lr2RG2I8boPH7tyynVAID8j0AWxtvLeOL2trq9K7mTdcSAaASRsYYvFiZNZgqv76U9O_9XMdwp4npauM0Tfig23x-hrc8cMBKWIZXz-6xaR4n8fh9bZUnVLcxAmJicz6n57BiadAsuWLOGmbjkb3G4wwlm-39XqvGNqHm1XTXKUMjOSlx1PV4ti9SPWaRu_d9US55A">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 text-surface-bright">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Zone 01 • Sensory Basin Room</span>
+<h3 class="font-headline-md text-headline-md text-surface-bright pt-space-xs">Ergonomic Shiatsu Massage Lounges</h3>
+<p class="font-body-sm text-body-sm text-surface-dim font-light max-w-xl pt-space-xs hidden md:block">
+                Fully reclined basin beds with integrated micro-vibration acupressure, chromotherapy ambient mood illumination, and Japanese micro-bubble ozone water purifiers.
+              </p>
+</div>
+</div>
+</div>
+<!-- Feature 2: VIP Suite -->
+<div class="lg:col-span-4 bg-surface p-space-lg flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="relative aspect-square overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Interior shot of private luxury VIP salon styling suite with brushed gold floor mirrors, single bespoke armchair, warm travertine stone side table with ceramic tea set, secluded tranquil luxury ambiance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjsLcxH9Q-gGN-GrRht-l63OYWZGK6eNb0IN9l5f8JY9y1pZx2qHKuycGA_B2ZkUBzXzcW5cLF5RLBJOMkSjmcT-qYzkGcBgCCXGSiUPhSkgYV5tU5oVfkDx92S-QpEPKqFyxQgpUmz1BxP1FClwZj_-KnzXSd9lwBfmIqCIxGzkcYCHY3GRFVBpyGbui3J2VdfsZToyWEeg85cuWM4HYSaXPOeKXy02heRo0vZkOGnbNZpkL2CXOuRA">
+</div>
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Zone 02 • Private Suite</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface pt-space-xs">The Obsidian Suite</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs leading-relaxed">
+                Dedicated secluded chambers with private entrance, personal music selection, soundproof acoustic wall felt, and private wash stations for discreet bespoke sessions.
+              </p>
+</div>
+</div>
+<div class="pt-space-md">
+<span class="font-caption text-caption text-on-surface font-semibold tracking-wider uppercase flex items-center gap-space-xs">
+              Available in Mumbai &amp; Delhi <span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+</span>
+</div>
+</div>
+<!-- Feature 3: Natural Filtered Daylight Bays -->
+<div class="lg:col-span-4 bg-surface p-space-lg flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="relative aspect-square overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Close up architectural detail of salon styling bay showing pure 5500K color balanced natural diffused daylight streaming through ribbed sheer curtains onto polished brass scissors and glass product vials." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLOsDiFAmcdCeitcfJ5atoCg1kpWN_q-eL41wayZvR1G3dMviFdq4H71BhEJpzATkj6jAAVj9cN2rnOSRFlfrkO0hl2ennZaSIcXeXjocyN0of8GwmP5h2iLAcnSn1BSIUz0Eof7ElekJOzWlIcnJx6JbkUFRWUlezGJvGPtKmUWXCmAWlnVofDUtbuQ9FBpF-wqXLrsuE5UWDIJ8VZ5ZKC-rTzgnTbP6j6wGph5Jw338JkFDhhsRRMg">
+</div>
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Zone 03 • Color Laboratory</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface pt-space-xs">5,500K True Daylight Calibration</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs leading-relaxed">
+                Every styling mirror is surrounded by museum-grade full-spectrum optics, ensuring your color tones render identical outdoors under true sunlight.
+              </p>
+</div>
+</div>
+<div class="pt-space-md">
+<span class="font-caption text-caption text-on-surface font-semibold tracking-wider uppercase flex items-center gap-space-xs">
+              Color Fidelity Certified <span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+</span>
+</div>
+</div>
+<!-- Feature 4: Flagship Locations Dual Showcase -->
+<div class="lg:col-span-8 bg-surface p-space-lg lg:p-space-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-md">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Flagship Ateliers</span>
+<span class="font-caption text-caption text-on-surface-variant">Seven Days • Appointment Only</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<div class="p-space-md bg-surface-container-low space-y-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Mumbai Flagship</span>
+<h4 class="font-title-md text-title-md text-on-surface">Altamount Road Atelier</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">42 Altamount Road, Cumballa Hill, Mumbai 400026</p>
+<div class="pt-space-xs space-y-space-xs font-caption text-caption text-on-surface">
+<div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-secondary">call</span>+91 22 2380 4411</div>
+<div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-secondary">local_parking</span>Valet Parking Available</div>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low space-y-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">New Delhi Flagship</span>
+<h4 class="font-title-md text-title-md text-on-surface">The Manor Atelier</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">77 Friends Colony West, New Delhi 110065</p>
+<div class="pt-space-xs space-y-space-xs font-caption text-caption text-on-surface">
+<div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-secondary">call</span>+91 11 4105 8820</div>
+<div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-secondary">local_florist</span>Private Courtyard Garden</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-lg flex flex-wrap items-center justify-between gap-space-md">
+<p class="font-caption text-caption text-on-surface-variant">
+              Visiting from abroad? Contact our international salon concierge for travel coordination and extended atelier block bookings.
+            </p>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface hover:text-secondary underline underline-offset-4" href="#">
+              Download Spatial Lookbook
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Invitation Banner to Experience the Atelier -->
+<section class="w-full bg-tertiary-container text-surface-bright py-space-2xl relative overflow-hidden">
+<!-- Subtle Background Accent Graphic -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-secondary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute left-1/4 -top-20 w-72 h-72 rounded-full bg-secondary-fixed/5 blur-2xl pointer-events-none"></div>
+<div class="max-w-[1440px] mx-auto px-margin lg:px-margin-desktop relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<div class="lg:col-span-8 space-y-space-md">
+<div class="flex items-center gap-space-xs text-secondary-fixed">
+<span class="inline-block w-6 h-[1px] bg-secondary-fixed"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest">An Invitation to Stillness</span>
+</div>
+<h2 class="font-display-lg text-display-lg text-surface-bright uppercase leading-tight">
+            Your transformation begins with an unhurried conversation.
+          </h2>
+<p class="font-body-lg text-body-lg text-surface-dim font-light max-w-2xl leading-relaxed">
+            Reserve your complimentary diagnostic appointment. Experience hair design articulated as fine art, executed with surgical precision and botanical purity.
+          </p>
+<div class="pt-space-md flex flex-wrap items-center gap-space-md">
+<a class="bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps uppercase tracking-widest px-space-xl py-space-md hover:bg-surface-bright transition-all shadow-md inline-flex items-center gap-space-xs" data-path="booking" href="booking.html">
+<span>Reserve Atelier Visit</span>
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+</a>
+<a class="bg-surface-container-lowest/10 backdrop-blur text-surface-bright font-label-caps text-label-caps uppercase tracking-widest px-space-lg py-space-md hover:bg-surface-container-lowest/20 transition-colors" data-path="services" href="services.html">
+              Explore Service Portfolio
+            </a>
+</div>
+</div>
+<div class="lg:col-span-4 bg-surface-container-lowest/5 p-space-lg backdrop-blur-sm space-y-space-md mt-space-lg lg:mt-0">
+<div class="space-y-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Atelier Concierge Direct</span>
+<h4 class="font-headline-sm text-headline-sm text-surface-bright">Immediate Inquiries</h4>
+<p class="font-body-sm text-body-sm text-surface-dim">
+              Our hospitality team responds within 15 minutes during studio operational hours.
+            </p>
+</div>
+<div class="space-y-space-xs pt-space-xs font-body-sm text-body-sm text-surface-bright">
+<div class="flex items-center gap-space-sm py-space-xs">
+<span class="material-symbols-outlined text-secondary-fixed">chat</span>
+<span>WhatsApp: +91 98200 48820</span>
+</div>
+<div class="flex items-center gap-space-sm py-space-xs">
+<span class="material-symbols-outlined text-secondary-fixed">mail</span>
+<span>concierge@zenzastudio.com</span>
+</div>
+<div class="flex items-center gap-space-sm py-space-xs">
+<span class="material-symbols-outlined text-secondary-fixed">schedule</span>
+<span>Mon – Sat: 10:00 AM – 9:00 PM</span>
+</div>
+</div>
+<div class="pt-space-xs">
+<span class="font-caption text-caption text-secondary-fixed uppercase tracking-wider block">
+              ∗ Valet &amp; private parking guaranteed for all booked guests
+            </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple subtle counter micro-interaction for metrics on scroll/load
+  document.addEventListener('DOMContentLoaded', () => {
+    const counters = document.querySelectorAll('[data-counter]');
+    counters.forEach(counter => {
+      const target = parseInt(counter.getAttribute('data-counter'), 10);
+      let count = 0;
+      const step = Math.max(1, Math.floor(target / 20));
+      const interval = setInterval(() => {
+        count += step;
+        if (count >= target) {
+          counter.textContent = target + (counter.getAttribute('data-counter') === '40' ? 'k' : '');
+          clearInterval(interval);
+        } else {
+          counter.textContent = count + (counter.getAttribute('data-counter') === '40' ? 'k' : '');
+        }
+      }, 40);
+    });
+  });
+</script></main><footer class="w-full bg-tertiary-container text-surface-bright pt-space-2xl pb-space-xl"><div class="max-w-[1440px] mx-auto px-margin lg:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-desktop pb-space-2xl"><div class="lg:col-span-4 flex flex-col justify-between space-y-space-md"><div class="space-y-space-xs"><p class="font-headline-md text-headline-md tracking-wider text-surface-bright uppercase">ZENZA</p><p class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Hair Studio</p></div><p class="font-body-lg text-body-lg italic text-tertiary-fixed-dim pr-space-lg">Where Artistry Meets Individuality.</p><div class="pt-space-sm"><p class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed mb-space-xs">Exclusive Dispatches</p><div class="flex items-center bg-surface-container-lowest/5 p-space-xs max-w-sm"><input class="bg-transparent font-body-sm text-body-sm text-surface-bright placeholder:text-outline-variant px-space-sm py-space-xs focus:outline-none flex-grow" placeholder="Enter your email address" type="email"><button class="bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps uppercase tracking-widest px-space-md py-space-xs hover:bg-surface-bright transition-colors" type="button">Join</button></div></div></div><div class="lg:col-span-3 space-y-space-md"><p class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Studio Hours</p><div class="space-y-space-xs font-body-sm text-body-sm text-tertiary-fixed-dim"><div class="flex justify-between py-space-xs"><span>Monday – Saturday</span><span class="text-surface-bright">10:00 AM – 9:00 PM</span></div><div class="flex justify-between py-space-xs"><span>Sunday</span><span class="text-surface-bright">11:00 AM – 7:00 PM</span></div><p class="font-caption text-caption text-outline-variant pt-space-xs">Private atelier reservations available upon consultation.</p></div></div><div class="lg:col-span-3 space-y-space-md"><p class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Ateliers</p><div class="space-y-space-md font-body-sm text-body-sm text-tertiary-fixed-dim"><div class="space-y-space-xs"><p class="font-title-md text-title-md text-surface-bright">Mumbai Atelier</p><p>42 Altamount Road, Cumballa Hill</p><p>Mumbai, Maharashtra 400026</p><p class="text-surface-bright pt-space-xs">+91 22 2380 4411</p></div><div class="space-y-space-xs"><p class="font-title-md text-title-md text-surface-bright">Delhi Atelier</p><p>The Manor, 77 Friends Colony West</p><p>New Delhi, Delhi 110065</p><p class="text-surface-bright pt-space-xs">+91 11 4105 8820</p></div></div></div><div class="lg:col-span-2 space-y-space-md"><p class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Connect</p><div class="flex flex-col space-y-space-sm font-label-caps text-label-caps uppercase tracking-widest text-tertiary-fixed-dim"><a class="hover:text-surface-bright transition-colors flex items-center gap-space-xs" href="#"><span class="material-symbols-outlined text-[16px]">chat</span>WhatsApp Concierge</a><a class="hover:text-surface-bright transition-colors flex items-center gap-space-xs" href="#"><span class="material-symbols-outlined text-[16px]">photo_camera</span>Instagram Journal</a><a class="hover:text-surface-bright transition-colors flex items-center gap-space-xs" href="#"><span class="material-symbols-outlined text-[16px]">mail</span>atelier@zenzastudio.com</a></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between font-caption text-caption text-outline-variant gap-space-md"><p>© 2025 ZENZA Hair Studio Private Limited. All privileges reserved.</p><div class="flex items-center gap-space-lg font-label-caps text-label-caps uppercase tracking-widest"><a class="hover:text-surface-bright transition-colors" href="#">Privacy Policy</a><a class="hover:text-surface-bright transition-colors" href="#">Terms of Service</a><a class="hover:text-surface-bright transition-colors" href="#">Salon Etiquette</a></div></div></div></footer></body></html>
